@@ -23,7 +23,7 @@ name                     : "SeonBab"
 description              : "선밥의 블로그 입니다."
 url                      : "https://Seonbab.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : SeonBab/SeonBab.github.io
+repository               : "SeonBab/SeonBab.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -45,7 +45,7 @@ comments:
     issue_term           : # "pathname" (default)
   giscus:
     repo                 : "SeonBab/SeonBab.github.io"
-    repo_id              : R_kgDOLprozQ
+    repo_id              : "R_kgDOLprozQ"
     category_name        : "Comments"
     category_id          : "DIC_kwDOLprozc4Cec2C"
     discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
