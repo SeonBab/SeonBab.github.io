@@ -292,11 +292,11 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false        # 읽는데 걸리는 시간
       comments: true
       share: true
       related: true
-      show_date: true
+      show_date: true         # 포스팅 날짜
       sidebar_main: true
       toc: true
       toc_sticky: true
