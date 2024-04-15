@@ -1,9 +1,10 @@
 ---
 title: "UE5"
-layout: categories
+layout: archive
 permalink: categories/ue5
 author_profile: true
 sidebar_main: true
 ---
 
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% assign posts = site.categories.UE5 %}
+{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

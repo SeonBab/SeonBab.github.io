@@ -25,7 +25,7 @@
         <span class="nav__sub-title">Unreal Engine</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Unreal_Engine" %}
+                    {% if category[0] == "UE5" %}
                         <li><a href="/categories/ue5" class="">언리얼 엔진5 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
