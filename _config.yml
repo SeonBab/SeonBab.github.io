@@ -303,5 +303,4 @@ defaults:
       toc_icon: "fa-solid fa-sitemap"
       use_math: true
 
-
 date_format: "%Y-%m-%d"
