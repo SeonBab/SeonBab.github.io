@@ -4,7 +4,6 @@ layout: archive
 permalink: categories/ue5
 author_profile: true
 sidebar_main: true
-is_sortable: false
 ---
 
 {% assign posts = site.categories.UE5 %}

@@ -31,41 +31,21 @@ layout: archive
       <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
         <h2 class="archive__subtitle">{{ category[0] }}</h2>
         <div class="entries-{{ page.entries_layout | default: 'list' }}">
-          {% assign is_sorting = category.last.last.is_sortable %}
-          {% if true == is_sorting %}
-            {% assign posts = category.last | sort: 'title' | reverse %}
-            {% for post in posts %}
-              <article class="archive-item">
-                <div>
-                    <span>
-                      <a href="{{ post.url }}">{{post.title}}</a>&nbsp
-                    </span>
-                    <small> 
-                      <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
-                      {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
-                        {%- include post__taxonomy.html -%}
-                      {% endif %}
-                    </small>
-                </div>
-              </article>
-            {% endfor %}
-          {% else if false == category.last.is_sortable %}
-            {% for post in category.last %}
-              <article class="archive-item">
-                <div>
-                    <span>
-                      <a href="{{ post.url }}">{{post.title}}</a>&nbsp
-                    </span>
-                    <small> 
-                      <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
-                      {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
-                        {%- include post__taxonomy.html -%}
-                      {% endif %}
-                    </small>
-                </div>
-              </article>
-            {% endfor %}
-          {% endif %}
+          {% for post in category.last %}
+            <article class="archive-item">
+              <div>
+                  <span>
+                    <a href="{{ post.url }}">{{post.title}}</a>&nbsp
+                  </span>
+                  <small> 
+                    <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
+                    {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
+                      {%- include post__taxonomy.html -%}
+                    {% endif %}
+                  </small>
+              </div>
+            </article>
+          {% endfor %}
         </div>
         <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
       </section>
