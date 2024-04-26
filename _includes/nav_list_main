@@ -30,6 +30,22 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title">Git & Github</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Git" %}
+                        <li><a href="/categories/git" class="">Git ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "GitHub" %}
+                        <li><a href="/categories/github" class="">GitHub ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
       </li>
   </ul>
 </nav>

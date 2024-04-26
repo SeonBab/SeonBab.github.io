@@ -1,0 +1,17 @@
+<!-- https://mermaid.js.org/config/theming.html -->
+
+{% if page.mermaid == true %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js"></script>
+<script>
+var config = {
+    startOnLoad:true,
+    theme: 'base',
+    flowchart:{
+            useMaxWidth:false,
+            htmlLabels:true
+        }
+};
+mermaid.initialize(config);
+window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
+{% endif %}
