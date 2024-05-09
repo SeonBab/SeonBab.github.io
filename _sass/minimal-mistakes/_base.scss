@@ -142,6 +142,7 @@ a {
   }
 
   &:hover {
+    text-decoration: underline;
     color: $link-color-hover;
     outline: 0;
   }
@@ -180,7 +181,7 @@ hr {
 
 ul li,
 ol li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0em; // default: 0.5
 }
 
 li ul,

@@ -113,7 +113,7 @@ author:
   name             : "SeonBab"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "선밥의 공부하는 블로그"
-  location         : "South Korea"
+  location         : # "South Korea"
   email            :
   links:
     - label: "Email"

@@ -505,6 +505,11 @@
 
   a {
     color: inherit;
+
+    &:hover {
+      color: $link-color-hover;
+      text-decoration: underline;
+    }
   }
 
   .active {
