@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "C++ Chapter 9 제어문"
+title: "[C++] 제어문"
 
 categories:
     - Cpp
@@ -13,7 +13,7 @@ last_modified_at: 2024-05-09
 
 # 제어문
 
-제어문((Control Flow Satements))은 프로그램의 흐름을 제어하는 경우에 사용하는 실행문으로, 조건문, 반복문, 분기문 등이 포함되어 있습니다.
+제어문(Control Flow Statements)은 프로그램의 흐름을 제어하는 경우에 사용하는 실행문으로, 조건문, 반복문, 분기문 등이 포함되어 있습니다.
 
 ## 조건문
 

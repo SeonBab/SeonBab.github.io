@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "UE5 Chapter 1.1 언리얼 엔진 디렉터리 구조"
+title: "[UE5] 언리얼 엔진 디렉터리 구조"
 
 categories:
     - UE5
@@ -26,7 +26,7 @@ last_modified_at: 2024-04-21
 새 프로젝트 생성 시 사용 가능한 프로젝트 템플릿 모음입니다.  
 프로젝트 템플릿은 아래와 같은 종류가 있습니다. 이미지는 게임의 템플릿입니다.
 
-![UnrealProjectTemplates]({{site.url}}/images/ue5/ue5/2024-04-21-chapter1-1/UnrealProjectTemplates.PNG)
+![UnrealProjectTemplates]({{site.url}}/images/ue5/ue5/2024-04-21-DirectoryStructure/UnrealProjectTemplates.PNG)
 
 ### GenerateProjectFiles.bat
 
@@ -107,7 +107,7 @@ Engine 디렉토리에는 엔진 자체와, 엔진에서 기본 제공하는 모
 이 폴더가 없을 경우 .uproject를 실행시켜 에디터가 열리면 Missing <프로젝트명> Modules 메시지 팝업을 띄웁니다.  
 이때 Yes를 누르면 컴파일 과정을 거쳐 폴더와 파일을 생성하고, 에디터가 실행됩니다.
 
-![MissingProjectModules]({{site.url}}/images/ue5/ue5/2024-04-21-chapter1-1/MissingProjectModules.PNG)
+![MissingProjectModules]({{site.url}}/images/ue5/ue5/2024-04-21-DirectoryStructure/MissingProjectModules.PNG)
 
 ### Config
 
@@ -116,7 +116,7 @@ Engine 디렉토리에는 엔진 자체와, 엔진에서 기본 제공하는 모
 아래 이미지에서 변경한 값들이 폴더의 파일들에 저장됩니다.
 환경설정 파일에 설정된 값은 Engine\Config 디렉터리에 설정된 값을 덮어씁니다.
 
-![ProjectSettings]({{site.url}}/images/ue5/ue5/2024-04-21-chapter1-1/ProjectSettings.PNG)
+![ProjectSettings]({{site.url}}/images/ue5/ue5/2024-04-21-DirectoryStructure/ProjectSettings.PNG)
 
 지워도 에디터 실행에는 문제가 되지 않지만 만약 프로젝트를 작업 중에 지웠다면 설정했던 값들은 없어지고, 언리얼 엔진 폴더의 Default 설정 파일들의 값이 사용됩니다.  
 Config 폴더가 다시 생기지 않고, Default 설정 파일들의 값이 사용되므로 절대 지우지 않아야합니다. 

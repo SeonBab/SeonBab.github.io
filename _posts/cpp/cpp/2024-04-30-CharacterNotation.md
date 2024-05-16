@@ -1,21 +1,21 @@
 ---
 layout: single
 
-title: "C++ Chapter 7 문자 표현"
+title: "[C++] 문자 표현"
 
 categories:
     - Cpp
 tag: [Cpp]
 
 date: 2024-04-30
-last_modified_at: 2024-04-30
+last_modified_at: 2024-05-17
 ---
 
 # 문자 표현
 
 문자는 영문 알파벳뿐 아니라 한글 등 각국의 문자가 저장되어야 하므로 각 문자를 구분하기위한 방법이 있고, 다양한 인코딩 방식들이 있습니다.
 
-다양한 문자를 표현하기 위해 각 문자별로 2진수의 코드 값을 부여한 코드 체계를 이용하며, 코드체계로는 아스키코드(ASCII: American Standard Code ofr information Interchange Code)와 유니코드(Unicode) 등이 있습니다.
+다양한 문자를 표현하기 위해 각 문자별로 2진수의 코드 값을 부여한 코드 체계를 이용하며, 코드체계로는 아스키코드(ASCII: American Standard Code for information Interchange Code)와 유니코드(Unicode) 등이 있습니다.
 
 ## 아스키코드 (ASCII Code)
 
@@ -54,7 +54,7 @@ ANSI를 한글에 맞게 확장한 것입니다.
 
 아래의 이미지는 EUC-KR 문자열 표입니다.
 
-![EUC-KR_CharacterCodeTable]({{site.url}}/images/cpp/cpp/2024-04-30-chapter7/EUC-KR_CharacterCodeTable.png){: width="50%" height="50%"}
+![EUC-KR_CharacterCodeTable]({{site.url}}/images/cpp/cpp/2024-04-30-CharacterNotation/EUC-KR_CharacterCodeTable.png){: width="50%" height="50%"}
 
 한글 `가`는 `b0 a 1`로 대응됩니다.  
 

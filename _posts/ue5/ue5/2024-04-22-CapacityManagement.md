@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "UE5 Chapter 1.2 언리얼 엔진 프로젝트 폴더와 용량 관리"
+title: "[UE5] 언리얼 엔진 프로젝트 폴더와 용량 관리"
 
 categories:
     - UE5
@@ -16,11 +16,11 @@ last_modified_at: 2024-04-22
 프로젝트를 백업하거나, Git 혹은 SVN을 사용해 협업을 할 때 폴더를 관리하지 않으면 늘어난 용량을 관리하기 힘들어집니다.  
 단순히 압축만으로는 큰 용량을 효율적으로 줄일 수 없고 작은 용량의 파일들이 많아 압축과 해제 시간이 적지 않습니다.
 
-[UE5 Chapter 1.1 언리얼 엔진 디렉터리 구조]({{site.url}}/ue5/chapter1-1/)에서 폴더의 구조를 파악했으니 이를 활용해 폴더를 관리하고, 용량을 효율적으로 줄일 수 있는 방법을 작성해보겠습니다.
+[UE5 Chapter 1.1 언리얼 엔진 디렉터리 구조]({{site.url}}/ue5/DirectoryStructure/)에서 폴더의 구조를 파악했으니 이를 활용해 폴더를 관리하고, 용량을 효율적으로 줄일 수 있는 방법을 작성해보겠습니다.
 
 # 소스빌드 + 플러그인 + 패키징까지 마친 프로젝트 폴더 구조
 
-![ProjectFolder]({{site.url}}/images/ue5/ue5/2024-04-22-chapter1-2/ProjectFolder.PNG)
+![ProjectFolder]({{site.url}}/images/ue5/ue5/2024-04-22-CapacityManagement/ProjectFolder.PNG)
 
 ## 프로젝트에서 중요한 파일 및 폴더
 

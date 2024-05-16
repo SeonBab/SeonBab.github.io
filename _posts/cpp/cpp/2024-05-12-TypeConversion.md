@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "C++ Chapter 10 형변환"
+title: "[C++] 형변환"
 
 categories:
     - Cpp
