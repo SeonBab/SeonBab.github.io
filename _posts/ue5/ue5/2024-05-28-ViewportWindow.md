@@ -8,7 +8,7 @@ categories:
 tag: [Unreal Engine, UE5]
 
 date: 2024-05-28
-last_modified_at: 2024-05-28
+last_modified_at: 2024-05-29
 ---
 
 # 뷰포트
@@ -115,11 +115,11 @@ W, A, S, D, Q, E, Z, C 대신 사용 가능한 키는 다음과 같습니다.
 
 뷰포트는 기본적으로 하나만 표시되고, 뷰포트 탭의 갯수를 늘릴 수 있습니다.
 
-![ViewportWindow-OtherViewport]({{site.url}}/images/ue5/ue5/2024-05-28-ViewportWindow/ViewportWindow-OtherViewport.png)
-
-창 >> 뷰포트 >> 뷰포트 선택시 뷰포트탭이 열립니다.
+창 >> 뷰포트 >> 뷰포트 탭 선택시 뷰포트탭이 열립니다.
 
 ![ViewportWindow-AddOtherViewport]({{site.url}}/images/ue5/ue5/2024-05-28-ViewportWindow/ViewportWindow-AddOtherViewport.png)
+
+![ViewportWindow-OtherViewport]({{site.url}}/images/ue5/ue5/2024-05-28-ViewportWindow/ViewportWindow-OtherViewport.png)
 
 ## 선택 컨트롤
 
