@@ -299,6 +299,7 @@ defaults:
       show_date: true         # 포스팅 날짜
       sidebar_main: true
       toc: true
+      toc_sticky: true        # 스크롤을 따라가는 toc
       toc_label: 목차
       toc_icon: "fa-solid fa-sitemap"
       use_math: true
