@@ -9,6 +9,8 @@ tag: [Cpp]
 
 date: 2024-10-25
 last_modified_at: 2024-10-25
+
+order : 210
 ---
 
 # 접근 제어자

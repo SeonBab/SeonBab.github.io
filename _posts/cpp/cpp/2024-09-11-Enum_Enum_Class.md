@@ -9,6 +9,8 @@ tag: [Cpp]
 
 date: 2024-09-11
 last_modified_at: 2024-09-11
+
+order : 170
 ---
 
 # 열거형

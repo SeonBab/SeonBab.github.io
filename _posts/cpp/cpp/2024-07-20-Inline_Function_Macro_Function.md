@@ -11,6 +11,8 @@ date: 2024-07-20
 last_modified_at: 2024-07-20
 
 mermaid: true
+
+order : 140
 ---
 
 # 인라인 함수와 매크로 함수
