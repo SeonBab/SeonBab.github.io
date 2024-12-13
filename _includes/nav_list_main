@@ -56,6 +56,13 @@
         <span class="nav__sub-title">ETC</span>
         <ul>
             {% for category in site.categories %}
+            {% if category[0] == "SpartaTIL" %}
+                <li><a href="/categories/spartaTIL" class="">스파르타TIL ({{category[1].size}})</a></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
             {% if category[0] == "etc" %}
                 <li><a href="/categories/etc" class="">기타 ({{category[1].size}})</a></li>
             {% endif %}
