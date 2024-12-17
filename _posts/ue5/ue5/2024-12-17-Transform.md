@@ -141,5 +141,5 @@ Z축을 따라 드래그하면 마찬가지로 큐브가 위아래로 움직이�
 
 # 참고
 
-[액터 트랜스폼하기](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/transforming-actors-in-unreal-engine)
-[액터 트랜스폼](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/transforming-actors?application_version=4.27)
+[액터 트랜스폼하기](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/transforming-actors-in-unreal-engine){: target="_blank"}  
+[액터 트랜스폼](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/transforming-actors?application_version=4.27){: target="_blank"}

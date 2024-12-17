@@ -95,4 +95,4 @@ order : 140
 
 # 참고
 
-![머티리얼](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/unreal-engine-materials)
+[머티리얼](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/unreal-engine-materials){: target="_blank"}
