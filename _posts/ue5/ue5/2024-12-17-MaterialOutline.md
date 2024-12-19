@@ -74,7 +74,12 @@ order : 140
 
 ![MaterialOutline-Properties]({{site.url}}/images/ue5/ue5/2024-12-17-MaterialOutline/MaterialOutline-Properties.PNG)
 
-머티리얼 도메인, 블렌드 모드, 셰이딩 모델 이 세 가지 설정은 머티리얼의 토대를 형성하고 사용 방법을 결정하며, 머티리얼 제작 과정 초기 단계에서 중요합니다.
+머티리얼 도메인, 블렌드 모드, 셰이딩 모델 이 세 가지 설정은 머티리얼의 토대를 형성하고 사용 방법을 결정하며, 머티리얼 제작 과정 초기 단계에서 중요합니다.  
+이외에도 나나이트나 반투명에 관한 옵션도 존재하며, 프리뷰 뷰포트에서 머리티얼을 미리 볼 때 사용할 스태틱 메시도 설정할 수 있습니다.
+
+좀 더 자세한 설명과 다른 프로퍼티에 대한 설명은 아래 링크에서 볼 수 있습니다.
+
+[언리얼 엔진 머티리얼 프로퍼티](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/unreal-engine-material-properties){: target="_blank"}
 
 ## 머티리얼 인스턴스
 
