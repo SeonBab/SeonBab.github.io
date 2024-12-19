@@ -42,8 +42,6 @@ order : 140
 
 ## 머티리얼 에디터 창
 
-머티리얼 에디터 창에 대해 알아보겠습니다.
-
 ![MaterialOutline-MaterialGraph]({{site.url}}/images/ue5/ue5/2024-12-17-MaterialOutline/MaterialOutline-MaterialGraph.PNG)
 
 이미지의 강조된 영역은 머티리얼 그래프(Material Graph)입니다.  
