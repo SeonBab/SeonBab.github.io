@@ -3,18 +3,11 @@
     <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
     <ul class="nav__items" id="category_tag_menu">
         <li>
-            <span class="nav__sub-title">TIL/WIL</span>
+            <span class="nav__sub-title">TIL</span>
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "TIL" %}
                             <li><a href="/categories/TIL" class="">TIL ({{category[1].size}})</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul>
-                    {% for category in site.categories %}
-                        {% if category[0] == "WIL" %}
-                            <li><a href="/categories/WIL" class="">WIL ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
