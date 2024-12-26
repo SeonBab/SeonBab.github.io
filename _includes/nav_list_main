@@ -33,7 +33,7 @@
             <span class="nav__sub-title">자료구조 및 알고리즘</span>
                 <ul>
                     {% for category in site.categories %}
-                        {% if category[0] == "UE5" %}
+                        {% if category[0] == "Algorithm" %}
                             <li><a href="/categories/algorithm" class="">알고리즘 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
