@@ -8,7 +8,7 @@ categories:
 tag: [Cpp]
 
 date: 2024-07-25
-last_modified_at: 2024-07-25
+last_modified_at: 2024-12-31
 
 mermaid: true
 
@@ -35,6 +35,10 @@ order : 160
 + typedef 사용
 + 지정하지 않은 배열 범위
 
+반환 자료형은 컴파일러가 함수 호출을 식별하는 기준이 아니기 때문에 반환 자료형만으로는 오버로딩 조건이 성립하지 않습니다.
+
+`typedef`는 기존 자료형에 대한 별칭이므로, 실제 자료형을 변경하지 않습니다.
+
 ## 함수 선언 및 정의
 
 오버로딩을 사용한 함수의 선언 예시입니다.
@@ -45,16 +49,17 @@ float function(float a);
 void function(int a, ...);
 void function(int a, int b);
 void function(int a, double b);
+void function(float a, float b);
 void function(int& a);
 void function(const int& a);
 void function(int a) const; // 멤버 함수일 때 사용 가능한 오버로딩 방법
 void function(int a) volatile; // 멤버 함수일 때 사용 가능한 오버로딩 방법
 ```
 
-`int function(int a);`와 `float function(float a);`와 `void function(int a, ...);`은 반환 자료형이 다르지만 인수의 자료형이 다르므로 오버로딩 할 수 있습니다.  
+`int function(int a);`와 `float function(float a);`와 `void function(int a, ...);`은 매개변수의 자료형이 다르므로 오버로딩 할 수 있습니다.  
 만약 반환 자료형만 다르다면 오버로딩 할 수 없었을 것입니다.
 
-예시의 다른 함수들도 매개변수의 갯수나 자료형이 다르며, 줄임표를 사용하거나 참조 한정자를 사용해 구분합니다.
+예시의 다른 함수들도 매개변수의 개수나 자료형이 다르며, 줄임표를 사용하거나 참조 한정자를 사용해 구분합니다.
 
 `void function(const int& a);`처럼 `const` 또는 `volatile`는 참조 한정자나 포인터에서만 오버로딩 할 수 있습니다.  
 만약 참조 한정자를 빼고 `void function(const int a);`로 선언할 경우 `int function(int a);`의 `int a`와 같은 인수로 보기 때문에 오버로딩 될 수 없습니다.
@@ -62,19 +67,23 @@ void function(int a) volatile; // 멤버 함수일 때 사용 가능한 오버�
 오버로딩을 사용한 함수 정의 예시는 다음과 같습니다.
 
 ```cpp
-int function(int a)
+void function(int a)
 {
 	++a;
-	std::cout << a << std::endl;
+	std::cout << "int: " << a << std::endl;
 }
-float function(float a)
+void function(float a)
 {
 	++a;
-	std::cout << a << std::endl;
+	std::cout << "float: " << a << std::endl;
 }
 void function(int a, int b)
 {
-	std::cout << a + b << std::endl;
+	std::cout << "int, int: " << a + b << std::endl;
+}
+void function(float a, float b)
+{
+	std::cout << "float, float: " << a + b << std::endl;
 }
 ```
 
@@ -88,22 +97,32 @@ void function(int a, int b)
 + 일치하는 함수가 있다.
 + 일치하는 함수가 없다.
 
-위에서 함수를 선언한 예시로 함수를 호출하는 경우 예시는 다음과 같습니다.
+정확히 일치하는 함수가 없으면 C++에서는 표준변환을 통해 일치하는 함수를 찾으려 합니다.  
+자세한 설명은 링크로 대체하겠습니다.  
+[C++ 형변환]({{ "cpp/TypeConversion/" | relative_url }}){: target="_blank"}
+
+이때 표준변환 등으로 일치하는 함수가 2개 이상이라면 컴파일 오류가 발생합니다.
+
+위에서 정의한 함수를 사용해 호출하는 경우 예시는 다음과 같습니다.
 
 ```cpp
-function('1'); // 모호한 함수가 있다.
-function(1); // 모호한 함수가 있다.
-function(1.4f); // 일치하는 함수가 있다.
+function(1, 1.4f); // 모호한 함수가 있다.
 function("1.4f"); // 일치하는 함수가 없다.
+function('1'); // 일치하는 함수가 있다.
+function(1); // 일치하는 함수가 있다.
+function(1.4f); // 일치하는 함수가 있다.
+function(1, 1.4); // 일치하는 함수가 있다.
 ```
 
-`function('1');`의 경우 오버라이딩 된 함수들 중 인수의 개수와 자료형이 같은 함수가 없어 표준변환을 통해 일치하는 함수를 찾으려 할 것입니다.  
-이 경우 `int function(int a)`, `void function(const int& a)` 등 다른 함수들 중 어떤 함수를 호출할지 컴파일러가 선택 할 수 없어 오류가 납니다.
+`function(1, 1.4f);`의 경우 오버로딩 된 함수들 중 인수의 개수와 자료형이 같은 함수를 찾습니다.  
+하지만 일치하는 함수가 없으므로 표준변환을 통해 일치하는 함수를 찾는데, 이때 매개변수를 `int`로 캐스팅할지 `float`로 캐스팅할지 모호해 오류가 발생합니다.
 
-`function(1);`의 경우 오버라이딩 된 함수들 중 인수의 개수와 자료형이 같은 함수가 많기 때문에 어떤 함수를 호출할지 컴파일러가 선택 할 수 없어 오류가 납니다.
+`function("1.4f");`의 경우 오버로딩 된 함수들에서 인수의 개수는 같아도 자료형이 같지 않아 호출 할 수 있는 함수가 없습니다.
 
-정확히 일치하는 항목이 없으면 C++에서는 표준변환을 통해 일치하는 함수를 찾으려 합니다.
+`function('1');`의 경우 오버로딩 된 함수들 중 인수의 개수와 자료형이 같은 함수가 없어 표준변환을 통해 `int function(int a)`함수가 호출됩니다.
+
+`function(1);`의 경우 오버로딩 된 함수들 중 인수의 개수와 자료형이 같은 함수가 `int function(int a)`이므로 해당 함수가 호출됩니다.
 
 `function(1.4f);`의 경우 `float function(float a)` 함수와 인수의 개수, 자료형이 같아 호출됩니다.
 
-`function("1.4f");`의 경우 오버라이딩 된 함수들에서 인수의 개수는 같아도 자료형이 같지 않아 호출 할 수 있는 함수가 없습니다.
+`function(1, 1.4);`의 경우 첫 매개변수는 `int`자료형이고, 두번째 매개변수는`double`이므로 표준변환을 통해 `void function(float a, float b)`가 호출됩니다.
