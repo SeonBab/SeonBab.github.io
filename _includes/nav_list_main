@@ -30,7 +30,6 @@
                         {% endif %}
                     {% endfor %}
                 </ul>
-            <span class="nav__sub-title">자료구조 및 알고리즘</span>
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "DataStructure" %}
@@ -45,6 +44,7 @@
                         {% endif %}
                     {% endfor %}
                 </ul>
+
             <span class="nav__sub-title">Unreal Engine</span>
                 <ul>
                     {% for category in site.categories %}

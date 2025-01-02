@@ -5,7 +5,7 @@ title: "[Data Structure] 자료구조란"
 
 categories:
     - DataStructure
-tag: [자료구조]
+tag: [Cpp, 자료구조]
 
 date: 2024-12-26
 last_modified_at: 2024-12-26
