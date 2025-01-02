@@ -1,11 +1,11 @@
 ---
 layout: single
 
-title: "[C++ 자료구조] 벡터"
+title: "[C++ STL] 벡터"
 
 categories:
-    - DataStructure
-tag: [Cpp, 자료구조]
+    - CppSTL
+tag: [Cpp, CppSTL]
 
 date: 2025-01-02
 last_modified_at: 2025-01-02
