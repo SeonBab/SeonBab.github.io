@@ -114,7 +114,7 @@ STL 컨테이너들은 기본(base) 클래스로 사용되기 위한 것이 아�
 + \<set> std::set과 std::multiset 연관 컨테이너
 + \<span> (C++20) std::span 뷰
 + \<stack> std::stack 컨테이너 어댑터
-+ \<unordered_map> (C++11) std::unordered_map과 std::unordered_multimap 비정렬 연관 켄테이너
++ \<unordered_map> (C++11) std::unordered_map과 std::unordered_multimap 비정렬 연관 컨테이너
 + \<unordered_set> (C++11) std::unordered_set과 std::unordered_multiset 비정렬 연관 컨테이너
 + \<vector> std::vector 컨테이너
 
