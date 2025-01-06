@@ -8,7 +8,7 @@ categories:
 tag: [Cpp, 자료구조]
 
 date: 2024-12-26
-last_modified_at: 2024-12-26
+last_modified_at: 2025-01-06
 
 order : 1
 ---
@@ -28,6 +28,8 @@ C++에서는 표준 템플릿 라이브러리(STL)와 사용자 정의 클래스
 데이터의 활용 빈도  
 데이터의 갱신 정도  
 프로그램의 용이성
+
+![ContainerChoice]({{site.url}}/images/cpp\DataStructure\2024-12-26-DataStructure\ContainerChoice.PNG)
 
 ## 자료 구조의 분류
 
