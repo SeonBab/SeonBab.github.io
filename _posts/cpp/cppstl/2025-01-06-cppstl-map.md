@@ -79,6 +79,10 @@ map1["Two"] = 2;
 ```cpp
 map1.insert(std::make_pair("Grape", 1));
 map1.insert(std::make_pair("Cherry", 2));
+
+// 기존 맵을 다른 맵에 복사
+map<string, int> copiedMap;
+copiedMap.insert(map1.begin(), map1.end());
 ```
 
 ### emplace
