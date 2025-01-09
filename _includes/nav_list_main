@@ -44,7 +44,13 @@
                         {% endif %}
                     {% endfor %}
                 </ul>
-
+                <ul>
+                    {% for category in site.categories %}
+                        {% if category[0] == "CppProgram" %}
+                            <li><a href="/categories/cppprogram" class="">프로그램 ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
             <span class="nav__sub-title">Unreal Engine</span>
                 <ul>
                     {% for category in site.categories %}
