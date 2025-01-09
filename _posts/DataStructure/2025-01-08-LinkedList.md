@@ -8,7 +8,7 @@ categories:
 tag: [Cpp, 자료구조]
 
 date: 2025-01-08
-last_modified_at: 2025-01-08
+last_modified_at: 2025-01-09
 
 order : 10
 ---
@@ -18,7 +18,8 @@ order : 10
 링크드 리스트(Linked List)는 데이터를 저장하는 노드들이 연결된 형태로 구성된 선형 자료구조입니다.  
 각 노드는 데이터를 저장하는 부분과 다음 노드를 가리키는 포인터를 포함합니다.
 
-배열과 다르게 링크드 리스트는 동적 메모리를 사용해 크기를 자유롭게 조정할 수 있습니다.
+배열과 다르게 링크드 리스트는 동적 메모리를 사용해 크기를 자유롭게 조정할 수 있습니다.  
+또한 메모리 상에서 연속적이지 않아도 됩니다.
 
 링크드 리스트는 원소의 삽입/삭제에 데이터를 이동하지 않아도 되기 때문에 $O(1)$의 시간 복잡도를 가지는 자료구조입니다.
 
@@ -244,6 +245,105 @@ public:
         }
 
         return false; // 삭제 실패(값을 찾지 못한 경우)
+    }
+};
+```
+
+### 이중 연결 리스트 구현해보기
+
+이중 연결 리스트는 이전 노드를 가리키는 포인터, 다음 노드를 가리키는 포인터 두 개의 포인터를 가지는 자료구조입니다.
+
+이런 구조로 인해, 양방향 순회가 가능하고 삽입/삭제가 특정 위치에서 효율적으로 이루어집니다.
+
+양방향 순회가 가능합니다.
+
+단일 연결 리스트보다 추가적인 포인터를 가지므로 메모리 소모가 큽니다.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+// 노드 구조 정의
+struct Node {
+    int data;
+    Node* prev; // 이전 노드 포인터
+    Node* next; // 다음 노드 포인터
+
+    Node(int val) : data(val), prev(nullptr), next(nullptr) {}
+};
+
+// 이중 연결 리스트 클래스
+class DoublyLinkedList {
+private:
+    Node* head; // 첫 번째 노드
+    Node* tail; // 마지막 노드
+
+public:
+    DoublyLinkedList() : head(nullptr), tail(nullptr) {}
+
+    // 노드 추가 (리스트 끝에 추가)
+    void append(int data) {
+        Node* newNode = new Node(data);
+        if (!head) { // 리스트가 비어있는 경우
+            head = tail = newNode;
+        } else {
+            tail->next = newNode;
+            newNode->prev = tail;
+            tail = newNode;
+        }
+    }
+
+    // 노드 삭제
+    void remove(int data) {
+        Node* current = head;
+        while (current) {
+            if (current->data == data) {
+                if (current->prev) {
+                    current->prev->next = current->next;
+                } else {
+                    head = current->next; // 첫 번째 노드 삭제
+                }
+
+                if (current->next) {
+                    current->next->prev = current->prev;
+                } else {
+                    tail = current->prev; // 마지막 노드 삭제
+                }
+
+                delete current;
+                return;
+            }
+            current = current->next;
+        }
+    }
+
+    // 리스트 출력
+    void print() const {
+        Node* current = head;
+        while (current) {
+            cout << current->data << " ";
+            current = current->next;
+        }
+        cout << endl;
+    }
+
+    // 역순 출력
+    void printReverse() const {
+        Node* current = tail;
+        while (current) {
+            cout << current->data << " ";
+            current = current->prev;
+        }
+        cout << endl;
+    }
+
+    ~DoublyLinkedList() {
+        Node* current = head;
+        while (current) {
+            Node* temp = current;
+            current = current->next;
+            delete temp;
+        }
     }
 };
 ```
