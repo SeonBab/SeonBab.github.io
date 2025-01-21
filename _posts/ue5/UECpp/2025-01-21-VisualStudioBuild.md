@@ -68,7 +68,13 @@ order : 30
 
 ![Build_Completed]({{site.url}}/images/ue5/uecpp/2025-01-21-VisualStudioBuild/VisualStudioBuild-Build_Completed.PNG)
 
+이미지 처럼 "Build completed"메시지가 나오면 정상 빌드된 것입니다.
+
 ![DLL]({{site.url}}/images/ue5/uecpp/2025-01-21-VisualStudioBuild/VisualStudioBuild-DLL.PNG)
+
+빌드 후, 프로젝트 폴더의 `Binaries/Win64` 폴더 내에 `UnrealEditor-프로젝트명.dll` 등이 새로 생성됩니다.
+
+이제 언리얼 에디터를 실행하면, 이 DLL을 로드해 수정된 로직이 적용됩니다.
 
 ### 전체 솔루션 빌드
 
