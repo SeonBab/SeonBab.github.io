@@ -17,16 +17,15 @@ order : 50
 
 해당 글에서 `AActor`를 상속받은 클래스에 컴포넌트를 추가하고, 초기화하는 예시를 작성해보겠습니다.
 
-우선 컴포넌트(Component)란 언리얼 엔진에서 Actor가 어떤 역할을 하거나 특정 속성을 갖도록 만들어주는 부품의 개념입니다.  
-하나의 액터에서 여러 종류의 컴포넌트를 조합해 다양한 기능을 구현 할 수 있습니다.
-
-예를 들어 `Static Mesh Component` + `Audio Component` + `Collision Component`를 모두 사용해, 충돌 시 소리가 나는 아이템을 만들 수 있습니다.
-
 모든 액터는 최상위 컴포넌트인 루트 컴포넌트(Root Component)를 가져야 합니다.
 
 루트 컴포넌트는 액터의 트랜스폼을 정의하며, 모든 하위 컴포넌트가 이를 기준으로 동작합니다.
 
 일반적으로 `Scene Component`를 루트로 설정하여 액터의 트랜스폼을 관리하고, 이에 속하도록 다양한 컴포넌트를 계층적으로 붙입니다.
+
+컴포넌트에 대한 더 자세한 설명은 다른 게시글에 정리해 두었습니다.
+
+[언리얼 엔진 컴포넌트]({{ "/ue5/Component/" | relative_url }}){: target="_blank"}
 
 # 컴포넌트 멤버 변수 추가 및 초기화
 
@@ -102,7 +101,7 @@ AItem::AItem()
 	// Scene Component를 생성하고 루트로 설정
 	SceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneRoot"));
 	SetRootComponent(SceneRoot);
-    
+
 	// Static Mesh Component를 생성하고 Scene Component에 Attach
 	StaticMeshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
 	StaticMeshComp->SetupAttachment(SceneRoot);
