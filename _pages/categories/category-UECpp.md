@@ -1,7 +1,7 @@
 ---
 title: "언리얼 Cpp"
 layout: archive
-permalink: categories/uecpp
+permalink: categories/UECpp
 author_profile: true
 sidebar_main: true
 ---
