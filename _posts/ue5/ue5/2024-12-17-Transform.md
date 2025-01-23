@@ -33,12 +33,12 @@ X의 경우 빨강색, Y의 경우 초록색, Z의 경우 파란색으로 표시
 
 디테일 패널의 트랜스폼 카테고리 통해 수동 트렌스포메이션(Manual Transformation)을 수행 할 수 있습니다.
 
-![Transform-Details]({{site.url}}/images/ue5/ue5/2024-12-17-Transform/Transform-Details.PNG)
+![Transform-Details]({{site.url}}/images/Unreal/ue5/2024-12-17-Transform/Transform-Details.PNG)
 
 레벨 뷰포트혹은 월드 아웃라이너에서 하나 이상의 액터를 선택하면 이 카테고리에서 해당 액터의 위치, 회전, 스케일을 편집 할 수 있습니다.  
 액터에 따라 가능한 경우 액터 모빌리티 세팅도 포함됩니다.
 
-![Transform-TransformAndMobility]({{site.url}}/images/ue5/ue5/2024-12-17-Transform/Transform-TransformAndMobility.PNG)
+![Transform-TransformAndMobility]({{site.url}}/images/Unreal/ue5/2024-12-17-Transform/Transform-TransformAndMobility.PNG)
 
 각 트랜스폼 프로퍼티에는 X, Y, Z축에 대한 숫자 입력 필드가 있습니다.  
 특정 값을 이 필드에 직접 입력하여 선택된 액터를 조정하거나 필드 안을 클릭하고 마우스를 위아래로 드래그하여 필드 값을 조정할 수 있습니다.
@@ -47,15 +47,15 @@ X의 경우 빨강색, Y의 경우 초록색, Z의 경우 파란색으로 표시
 이 경우 숫자를 입력하면 해당 값을 선택한 모든 액터에 값을 덮어씁니다.  
 이 경우 액터가 같은 값을 가지므로 겹칠 수 있습니다.
 
-![Transform-MultipleValues]({{site.url}}/images/ue5/ue5/2024-12-17-Transform/Transform-MultipleValues.PNG)
+![Transform-MultipleValues]({{site.url}}/images/Unreal/ue5/2024-12-17-Transform/Transform-MultipleValues.PNG)
 
 스케일 고정(Lock Scale) 버튼을 클릭하여 스케일 필드를 고정할 수 있습니다. 고정되면 각 축(X, Y, Z)의 값이 함께 변하므로 균일한 스케일 조정이 이뤄지며 왜곡을 방지할 수 있습니다.
 
-![Transform-LockScale]({{site.url}}/images/ue5/ue5/2024-12-17-Transform/Transform-LockScale.PNG)
+![Transform-LockScale]({{site.url}}/images/Unreal/ue5/2024-12-17-Transform/Transform-LockScale.PNG)
 
 트랜스폼 프로퍼티의 기본값은 상대적 좌표 공간이며, 이는 액터의 부모 혹은 컴포넌트의 부모를 기준으로 트랜스폼이 발생한다는 것을 뜻합니다.  
 
-![Transform-RelativeCoordinate]({{site.url}}/images/ue5/ue5/2024-12-17-Transform/Transform-RelativeCoordinate.PNG)
+![Transform-RelativeCoordinate]({{site.url}}/images/Unreal/ue5/2024-12-17-Transform/Transform-RelativeCoordinate.PNG)
 
 위 이미지를 예시로 다음과 같습니다.
 
@@ -68,7 +68,7 @@ X의 경우 빨강색, Y의 경우 초록색, Z의 경우 파란색으로 표시
 프로퍼티 라벨 옆의 드롭다운 화살표를 클릭하여 상대적 및 월드 트랜스폼을 토글할 수 있습니다.  
 월드 트랜스폼은 액터의 부모가 아닌 월드 좌표를 기준으로 발생합니다.
 
-![Transform-DefaultCoordinateSpace]({{site.url}}/images/ue5/ue5/2024-12-17-Transform/Transform-DefaultCoordinateSpace.PNG)
+![Transform-DefaultCoordinateSpace]({{site.url}}/images/Unreal/ue5/2024-12-17-Transform/Transform-DefaultCoordinateSpace.PNG)
 
 ## 인터랙티브 트랜스포메이션
 
@@ -79,7 +79,7 @@ X의 경우 빨강색, Y의 경우 초록색, Z의 경우 파란색으로 표시
 녹색은 Y축을 나타냅니다.  
 파랑은 Z축을 나타냅니다.
 
-![Transform-GizmoColor]({{site.url}}/images/ue5/ue5/2024-12-17-Transform/Transform-GizmoColor.PNG)
+![Transform-GizmoColor]({{site.url}}/images/Unreal/ue5/2024-12-17-Transform/Transform-GizmoColor.PNG)
 
 ### 이동 기즈모
 

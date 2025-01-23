@@ -17,7 +17,7 @@ order : 30
 
 뷰포트(Viewport)에서 레벨을 살펴보고 편집 할 수 있으며, 오브젝트를 관리 할 수 있습니다.
 
-![ViewportWindow-Viewport]({{site.url}}/images/ue5/ue5/2024-05-28-ViewportWindow/ViewportWindow-Viewport.png)
+![ViewportWindow-Viewport]({{site.url}}/images/Unreal/ue5/2024-05-28-ViewportWindow/ViewportWindow-Viewport.png)
 
 ## 뷰포트 카메라 조작법
 
@@ -69,7 +69,7 @@ W, A, S, D, Q, E, Z, C 대신 사용 가능한 키는 다음과 같습니다.
 뷰포트 탭의 좌측 상단에 있는 버튼은 뷰포트의 옵션들을 볼 수 있는 버튼입니다.  
 이 버튼을 누를 시 작업중인 뷰포트의 옵션이 표시됩니다.
 
-![ViewportWindow-ViewportOption]({{site.url}}/images/ue5/ue5/2024-05-28-ViewportWindow/ViewportWindow-ViewportOption.png)
+![ViewportWindow-ViewportOption]({{site.url}}/images/Unreal/ue5/2024-05-28-ViewportWindow/ViewportWindow-ViewportOption.png)
 
 ## 뷰포트 유형
 
@@ -78,7 +78,7 @@ W, A, S, D, Q, E, Z, C 대신 사용 가능한 키는 다음과 같습니다.
 유형은 대표적으로 3D로 보는 원근과 직교 투영한 화면인 직교로 나뉩니다.  
 직교는 바라보는 방향에 따라 6가지로 나뉩니다.
 
-![ViewportWindow-ViewportCategory]({{site.url}}/images/ue5/ue5/2024-05-28-ViewportWindow/ViewportWindow-ViewportCategory.png)
+![ViewportWindow-ViewportCategory]({{site.url}}/images/Unreal/ue5/2024-05-28-ViewportWindow/ViewportWindow-ViewportCategory.png)
 
 뷰포트 유형을 변경하는 단축키는 다음과 같습니다.
 
@@ -93,23 +93,23 @@ W, A, S, D, Q, E, Z, C 대신 사용 가능한 키는 다음과 같습니다.
 
 시각화 모드는 [언리얼 엔진의 뷰포트 문서](https://docs.github.com/ko/get-started) 에서 볼 수 있습니다.
 
-![ViewportWindow-ViewportMod]({{site.url}}/images/ue5/ue5/2024-05-28-ViewportWindow/ViewportWindow-ViewportMod.png)
+![ViewportWindow-ViewportMod]({{site.url}}/images/Unreal/ue5/2024-05-28-ViewportWindow/ViewportWindow-ViewportMod.png)
 
 ## 플래그 옵션
 
 플래그 옵션에서는 뷰포트에서 보이는 플러그들에 대해 표시할지 안할지 설정값을 변경 할 수 있습니다.
 
-![ViewportWindow-ViewportShowFlag]({{site.url}}/images/ue5/ue5/2024-05-28-ViewportWindow/ViewportWindow-ViewportShowFlag.png)
+![ViewportWindow-ViewportShowFlag]({{site.url}}/images/Unreal/ue5/2024-05-28-ViewportWindow/ViewportWindow-ViewportShowFlag.png)
 
 ## 뷰포트 최대화
 
 뷰포트 탭의 우측 상단에 있는 버튼은 뷰포트의 레이아웃 패널을 최대화 하거나 원래 크기로 복원해줍니다.
 
-![ViewportWindow-ViewportMaximize]({{site.url}}/images/ue5/ue5/2024-05-28-ViewportWindow/ViewportWindow-ViewportMaximize.png)
+![ViewportWindow-ViewportMaximize]({{site.url}}/images/Unreal/ue5/2024-05-28-ViewportWindow/ViewportWindow-ViewportMaximize.png)
 
 원래 크기로 복원 할 시 4개의 패널이 보이는데 이것은 뷰포트 옵션의 레이아웃이 4패널로 설정돼있기 때문입니다.
 
-![ViewportWindow-ViewportLayout]({{site.url}}/images/ue5/ue5/2024-05-28-ViewportWindow/ViewportWindow-ViewportLayout.png)
+![ViewportWindow-ViewportLayout]({{site.url}}/images/Unreal/ue5/2024-05-28-ViewportWindow/ViewportWindow-ViewportLayout.png)
 
 4패널에서는 기본적으로 후면, 오른쪽, 원근, 상단 이렇게 4가지 보기로 설정 되어있습니다.
 
@@ -119,9 +119,9 @@ W, A, S, D, Q, E, Z, C 대신 사용 가능한 키는 다음과 같습니다.
 
 창 >> 뷰포트 >> 뷰포트 탭 선택시 뷰포트탭이 열립니다.
 
-![ViewportWindow-AddOtherViewport]({{site.url}}/images/ue5/ue5/2024-05-28-ViewportWindow/ViewportWindow-AddOtherViewport.png)
+![ViewportWindow-AddOtherViewport]({{site.url}}/images/Unreal/ue5/2024-05-28-ViewportWindow/ViewportWindow-AddOtherViewport.png)
 
-![ViewportWindow-OtherViewport]({{site.url}}/images/ue5/ue5/2024-05-28-ViewportWindow/ViewportWindow-OtherViewport.png)
+![ViewportWindow-OtherViewport]({{site.url}}/images/Unreal/ue5/2024-05-28-ViewportWindow/ViewportWindow-OtherViewport.png)
 
 ## 선택 컨트롤
 
@@ -144,7 +144,7 @@ W, A, S, D, Q, E, Z, C 대신 사용 가능한 키는 다음과 같습니다.
 우측 상단의 메뉴는 대부분 트랜스폼 컨트롤에 관한 메뉴입니다.  
 좌측 상단에 있던 메뉴들과 다르게 토글 메뉴가 많으므로 한번에 설명하겠습니다.
 
-![ViewportWindow-TopRightMenu]({{site.url}}/images/ue5/ue5/2024-05-28-ViewportWindow/ViewportWindow-TopRightMenu.png)
+![ViewportWindow-TopRightMenu]({{site.url}}/images/Unreal/ue5/2024-05-28-ViewportWindow/ViewportWindow-TopRightMenu.png)
 
 1. 오브젝트를 선택할 수 있게 됩니다.
 2. 오브젝틀를 선택하거나 이동할 수 있는 툴을 선택합니다.

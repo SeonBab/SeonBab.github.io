@@ -29,15 +29,15 @@ order : 60
 세 가지 방법으로 콘텐츠 브라우저를 열 수 있고, 4개까지 동시에 열 수 있습니다.
 
 상단 메뉴 바의 창 메뉴에서 열 수 있습니다.
-![ContentBrowser-AddOtherContentBrowser1]({{site.url}}/images/ue5/ue5/2024-06-01-ContentBrowser/ContentBrowser-AddOtherContentBrowser1.PNG)
+![ContentBrowser-AddOtherContentBrowser1]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-AddOtherContentBrowser1.PNG)
 
 메인 툴바의 생성 메뉴에서 열 수 있습니다.
-![ContentBrowser-AddOtherContentBrowser2]({{site.url}}/images/ue5/ue5/2024-06-01-ContentBrowser/ContentBrowser-AddOtherContentBrowser2.PNG)
+![ContentBrowser-AddOtherContentBrowser2]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-AddOtherContentBrowser2.PNG)
 
 콘텐츠 드로어의 레이아웃에 고정 버튼을 누르면 열 수 있습니다.
 고정 버튼을 눌렀을 경우 새 콘텐츠 브라우저 인스턴스가 생성되지만 새 콘텐츠 드로어가 계속 열려있습니다.
 
-![ContentBrowser-FixContentDrawer]({{site.url}}/images/ue5/ue5/2024-06-01-ContentBrowser/ContentBrowser-FixContentDrawer.PNG)
+![ContentBrowser-FixContentDrawer]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-FixContentDrawer.PNG)
 
 ## 콘텐츠 드로어
 
@@ -47,7 +47,7 @@ order : 60
 
 첫 방법은 에디터 하단 툴바에서 콘텐츠 드로어 버튼을 클릭해 열 수 있습니다.
 
-![ContentBrowser-OpenContentDrawer]({{site.url}}/images/ue5/ue5/2024-06-01-ContentBrowser/ContentBrowser-OpenContentDrawer.PNG)
+![ContentBrowser-OpenContentDrawer]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-OpenContentDrawer.PNG)
 
 다음 방법으로는 Ctrl + 스페이스바 단축키로 열 수 있습니다.
 
@@ -55,13 +55,13 @@ order : 60
 
 네비게이션 바에는 에셋을 추가, 임포트, 저장을 하고, 히스토리 뒤로 앞으로, 현재 열린 폴더의 경로를 표시하기 위한 컨트롤이 포함되어 있습니다.
 
-![ContentBrowser-NavigationBar]({{site.url}}/images/ue5/ue5/2024-06-01-ContentBrowser/ContentBrowser-NavigationBar.PNG)
+![ContentBrowser-NavigationBar]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-NavigationBar.PNG)
 
 ## 소스 패널
 
 소스 패널에서는 프로젝트 내의 모든 폴더 목록이 포함되어 있습니다.
 
-![ContentBrowser-Sources]({{site.url}}/images/ue5/ue5/2024-06-01-ContentBrowser/ContentBrowser-Sources.PNG)
+![ContentBrowser-Sources]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-Sources.PNG)
 
 자세한 정보는 [소스 패널 참고 자료](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/sources-panel-reference-in-unreal-engine)에서 참조 할 수 있습니다.
 
@@ -75,7 +75,7 @@ order : 60
 
 자세한 정보는 [필터 및 컬렉션](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/filters-and-collections-in-unreal-engine)에서 참조 할 수 있습니다.
 
-![ContentBrowser-Collections]({{site.url}}/images/ue5/ue5/2024-06-01-ContentBrowser/ContentBrowser-Collections.PNG)
+![ContentBrowser-Collections]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-Collections.PNG)
 
 ## 필터 열
 
@@ -85,7 +85,7 @@ order : 60
 다수의 필터를 동시에 활성화하고 개별적으로 토글하여 켜거나 끌 수 있습니다.  
 필터는 로컬에 저장되며 프로젝트 전체에 공유됩니다.
 
-![ContentBrowser-Filters]({{site.url}}/images/ue5/ue5/2024-06-01-ContentBrowser/ContentBrowser-Filters.PNG)
+![ContentBrowser-Filters]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-Filters.PNG)
 
 자세한 정보는 [필터 및 컬렉션](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/filters-and-collections-in-unreal-engine)에서 참조 할 수 있습니다.
 
@@ -94,7 +94,7 @@ order : 60
 이름과 유형을 기반으로 에셋을 빠르게 찾는 다양한 기능을 제공합니다.  
 에셋 뷰는 소스 패널에서 선택한 폴더의 콘텐츠를 표시하고, 소스 패널에 입력하는 파라미터를 기반으로 동적으로 업데이트 됩니다.
 
-![ContentBrowser-Search]({{site.url}}/images/ue5/ue5/2024-06-01-ContentBrowser/ContentBrowser-Search.PNG)
+![ContentBrowser-Search]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-Search.PNG)
 
 ## 에셋 뷰
 
@@ -106,7 +106,7 @@ order : 60
 - 에셋 뷰 안에서 우클릭하면 열리는 컨텍스트 메뉴 를 통해 에셋을 생성 및 임포트합니다.
 + 새 폴더를 생성합니다.
 
-![ContentBrowser-AssetView]({{site.url}}/images/ue5/ue5/2024-06-01-ContentBrowser/ContentBrowser-AssetView.PNG)
+![ContentBrowser-AssetView]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-AssetView.PNG)
 
 ## 세팅
 
@@ -114,4 +114,4 @@ order : 60
 
 세팅 버튼을 클릭하면 콘텐츠 브라우저의 현재 인스턴스에 대해 세팅을 조정할 수 있는 메뉴가 열립니다.
 
-![ContentBrowser-Setting]({{site.url}}/images/ue5/ue5/2024-06-01-ContentBrowser/ContentBrowser-Setting.PNG)
+![ContentBrowser-Setting]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-Setting.PNG)

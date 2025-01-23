@@ -21,7 +21,7 @@ order : 150
 
 ## 머티리얼 입력 예시
 
-![MainMaterialNode-InputExample]({{site.url}}/images/ue5/ue5/2024-12-18-MainMaterialNode/MainMaterialNode-InputExample.PNG)
+![MainMaterialNode-InputExample]({{site.url}}/images/Unreal/ue5/2024-12-18-MainMaterialNode/MainMaterialNode-InputExample.PNG)
 
 그래프의 머티리얼 표현식에서 데이터를 전혀 받지 않는 입력은 단순히 디폴트값으로 되돌아갑니다.
 
@@ -36,7 +36,7 @@ order : 150
 + 블렌드 모드(Blend Mode)
 + 셰이딩 모델(Shading Model)
 
-![MainMaterialNode-NodeVariations]({{site.url}}/images/ue5/ue5/2024-12-18-MainMaterialNode/MainMaterialNode-NodeVariations.PNG)
+![MainMaterialNode-NodeVariations]({{site.url}}/images/Unreal/ue5/2024-12-18-MainMaterialNode/MainMaterialNode-NodeVariations.PNG)
 
 비활성화된 입력에 노드가 연결되면, 연결된 노드는 무시됩니다.  
 즉, 어떤 방식으로도 컴파일된 머티리얼에 영향을 미치지 않습니다.

@@ -49,7 +49,7 @@ order : 70
 
 언리얼 에디터 하단의 라이브 코딩 아이콘 옆 세로 점 3개에서 라이브 코딩 활성화(Enable Live Coding)를 체크합니다.
 
-![EnableLiveCoding]({{site.url}}/images/ue5/ue5/2025-01-21-LiveCoding/LiveCoding-EnableLiveCoding.PNG)
+![EnableLiveCoding]({{site.url}}/images/Unreal/ue5/2025-01-21-LiveCoding/LiveCoding-EnableLiveCoding.PNG)
 
 ## 사용 방법
 
@@ -57,8 +57,8 @@ order : 70
 
 에디터 하단에 있는 라이브 코딩 아이콘을 클릭하거나, 단축키 `Ctrl + Alt + F11`을 눌러 라이브 코딩 빌드를 시작합니다.
 
-![Icon]({{site.url}}/images/ue5/ue5/2025-01-21-LiveCoding/LiveCoding-Icon.PNG)
+![Icon]({{site.url}}/images/Unreal/ue5/2025-01-21-LiveCoding/LiveCoding-Icon.PNG)
 
 컴파일이 완료되면 라이브 코딩 창에 "Fiished" 메시지가 뜨고, 에디터가 즉시 수정된 로직을 반영합니다.
 
-![Finished]({{site.url}}/images/ue5/ue5/2025-01-21-LiveCoding/LiveCoding-Finished.PNG)
+![Finished]({{site.url}}/images/Unreal/ue5/2025-01-21-LiveCoding/LiveCoding-Finished.PNG)

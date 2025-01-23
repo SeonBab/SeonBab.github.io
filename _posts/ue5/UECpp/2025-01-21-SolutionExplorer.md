@@ -17,7 +17,7 @@ order : 1
 
 비주얼 스튜디오에서 솔루션 탐색기에 프로젝트 폴더들이 계층적으로 표시됩니다.
 
-![Project_Folder]({{site.url}}/images/ue5/uecpp/2025-01-21-SolutionExplorer/SolutionExplorer-Project_Folder.PNG)
+![Project_Folder]({{site.url}}/images/Unreal/uecpp/2025-01-21-SolutionExplorer/SolutionExplorer-Project_Folder.PNG)
 
 여기서 실제 윈도우즈 탐색기에서 본 프로젝트 폴더 구조와 차이점이 있을 수 있습니다.  
 비주얼 스튜디오는 빌드와 관리를 용이하게 하기 위해 디스크의 실제 폴더 구조와는 별개로 가상 폴더 구조를 생성합니다.
@@ -42,7 +42,7 @@ C++로 작성하는 게임 로직을 이 폴더에서 많이 다룹니다.
 `Games`폴더 안에 사용자가 만든 프로젝트 이름이 있는데 이 폴더가 프로젝트 루트입니다.  
 `Games/프로젝트명`으로 있습니다.
 
-![Games_Folder]({{site.url}}/images/ue5/uecpp/2025-01-21-SolutionExplorer/SolutionExplorer-Games_Folder.PNG)
+![Games_Folder]({{site.url}}/images/Unreal/uecpp/2025-01-21-SolutionExplorer/SolutionExplorer-Games_Folder.PNG)
 
 게임 개발에 필요한 모든 리소스와 설정 파일이 담긴 폴더입니다.
 

@@ -22,7 +22,7 @@ order : 20
 
 # 소스빌드 + 플러그인 + 패키징까지 마친 프로젝트 폴더 구조
 
-![ProjectFolder]({{site.url}}/images/ue5/ue5/2024-04-22-CapacityManagement/ProjectFolder.PNG)
+![ProjectFolder]({{site.url}}/images/Unreal/ue5/2024-04-22-CapacityManagement/ProjectFolder.PNG)
 
 ## 프로젝트에서 중요한 파일 및 폴더
 

@@ -86,7 +86,7 @@ AItem::AItem()
 
 여기까지 작업을 해보고, 해당 클래스를 레벨 뷰포트에 배치해보면 디테일 창에서 컴포넌트가 보이는 것을 알 수 있습니다.  
 
-![ActorClassAddComponent-Detail]({{site.url}}/images/ue5/uecpp/2025-01-22-ActorClassAddComponent/ActorClassAddComponent-Detail.PNG)
+![ActorClassAddComponent-Detail]({{site.url}}/images/Unreal/uecpp/2025-01-22-ActorClassAddComponent/ActorClassAddComponent-Detail.PNG)
 
 하지만 스태틱 매시 컴포넌트가 보이지 않는데, 이는 에디터 상에 컴포넌트 들이 노출되도록 리플렉션 시스템에 등록하지 않았기 때문입니다.  
 그런데 루트 컴포넌트는 설정하지 않았는데도 컴포넌트가 보이는데, 이는 루트 컴포넌트일 경우 설정하지 않아도 기본적으로 리플렉션 시스템에 등록이 되기 때문입니다.
@@ -128,7 +128,7 @@ AItem::AItem()
 단 경로는 `/Game`부터 시작하면 되므로 앞 부분의 불필요한 경로는 삭제해 줍니다.  
 `/Game`은 프로젝트의 `Content`폴더를 나타냅니다.
 
-![ActorClassAddComponent-CopyReference]({{site.url}}/images/ue5/uecpp/2025-01-22-ActorClassAddComponent/ActorClassAddComponent-CopyReference.PNG)
+![ActorClassAddComponent-CopyReference]({{site.url}}/images/Unreal/uecpp/2025-01-22-ActorClassAddComponent/ActorClassAddComponent-CopyReference.PNG)
 
 조건문의 `.Succeeded()`는 지정된 경로에서 리소스를 성공적으로 찾았는지 값을 반환해줍니다.  
 경로가 잘못되었거나 리소스 파일이 누락된 경우 실패하며, 이후 설정 함수가 호출되지 않도록 해줍니다.
@@ -139,6 +139,6 @@ AItem::AItem()
 
 이렇게 설정을 마치면 다음과 같이 할당이 잘 된것을 확인해 볼 수 있습니다.
 
-![ActorClassAddComponent-Viewport]({{site.url}}/images/ue5/uecpp/2025-01-22-ActorClassAddComponent/ActorClassAddComponent-Viewport.PNG)
+![ActorClassAddComponent-Viewport]({{site.url}}/images/Unreal/uecpp/2025-01-22-ActorClassAddComponent/ActorClassAddComponent-Viewport.PNG)
 
 리플렉션을 설정하지 않아 디테일 창에서 컴포넌트가 보이지 않고, 에디터 상에서 할당이 불가능 하지만 기본적으로 컴포넌트를 추가하는 방법에 대한 설명이었습니다.

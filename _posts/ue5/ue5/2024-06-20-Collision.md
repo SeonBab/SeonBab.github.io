@@ -27,18 +27,18 @@ order : 110
 
 예시로 언리얼에서 제공하는 삼인칭 템플릿의 게임을 시작해보면 캐릭터가 바닥을 뚫지않고 바닥 위에 서있는 것을 볼 수 있습니다.
 
-![Collision-CharacterontheFloor]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-CharacterontheFloor.PNG)
+![Collision-CharacterontheFloor]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-CharacterontheFloor.PNG)
 
 플레이어 캐릭터와 바닥에 있는 스태틱메시 액터의 콜리전을 각각 살펴보겠습니다.
 
-![Collision-FloorCollision]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-FloorCollision.PNG)
+![Collision-FloorCollision]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-FloorCollision.PNG)
 
 우선 바닥에 있는 스태틱 메시 액터의 콜리전입니다.
 
 `BlockAll`이라는 콜리전 프리셋이며, 오브젝트 타입은 `WorldStatic`입니다.  
 모든 타입에 대해서 블록 처리를 하게 설정이 되있는 것을 알 수 있습니다.
 
-![Collision-CharacterCollision]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-CharacterCollision.PNG)
+![Collision-CharacterCollision]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-CharacterCollision.PNG)
 
 플레이어 캐릭터의 콜리전은 `Mesh`와 `CapsuleComponent` 두 개가 있는 것을 볼 수 있습니다.  
 두 개가 각각 콜리전을 가지는 것인데, `Mesh`의 콜리전 프리셋은 `CharacterMesh`이고, 오브젝트 타입은`Pawn`입니다.  `CapsuleComponent`의 콜리전 프리셋은 `Pawn`이고, 오브젝트 타입도`Pawn`입니다.
@@ -52,7 +52,7 @@ order : 110
 충돌 사실을 보고하도록 하기 위해서는 서로 블록(block)으로 설정되어 있어야 합니다.  
 그리고 시뮬레이션 히트 이벤트 생성(Simulation Generates Hit Events)옵션을 활성화해야 무언가와 충돌 할 때마다 자체적으로 이벤트를 발동시킬 수 있습니다.
 
-![Collision-EventHit]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-EventHit.PNG)
+![Collision-EventHit]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-EventHit.PNG)
 
 서로 블록으로 반응하지 않는다면 히트 이벤트는 발동되지 않습니다.
 
@@ -62,18 +62,18 @@ order : 110
 
 예시로 액터를 하나 만들고 플레이어 캐릭터와 오버랩을 설정해보면 캐릭터가 해당 액터와 겹쳐지고 뚫고 지나갈 수 있습니다.
 
-![Collision-ActorandCharacterOverlap]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-ActorandCharacterOverlap.PNG)
+![Collision-ActorandCharacterOverlap]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-ActorandCharacterOverlap.PNG)
 
 플레이어 캐릭터와 만들어낸 액터의 콜리전을 각각 살펴보겠습니다.
 
-![Collision-ActorCollision]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-ActorCollision.PNG)
+![Collision-ActorCollision]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-ActorCollision.PNG)
 
 액터는 `StaticMesh` 컴포넌트 한개만을 가지고 있어 콜리전은 `StaticMesh`에서만 가지고있는 것을 알 수 있습니다.
 `StaticMesh`의 콜리전 프리셋은 `OverlapAll`이고, 오브젝트 타입은`WorldStatic`입니다.  
 
 콜리전 프리셋에서 모든 콜리전 반응을 오버랩으로 반응하게 설정되어있다는 것을 알 수 있습니다.
 
-![Collision-CharacterCollision]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-CharacterCollision.PNG)
+![Collision-CharacterCollision]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-CharacterCollision.PNG)
 
 플레이어 캐릭터의 콜리전은 변경하지 않았으므로 블록에서 알아보았을 때와 같습니다.  
 그러므로 분명 `WorldStatic`은 블록 처리로 돼있어 만든 액터와 겹쳐지거나 뚫을 수 없어야 하겠지만, 콜리전 반응이 한 쪽이라도 블록으로 되어있지 않다면 지금의 경우와 같이 겹쳐지거나 뚫고 지나갈 수 있다는 것을 알 수 있습니다.  
@@ -88,7 +88,7 @@ order : 110
 
 히트 이벤트에서는 충돌을 수신 할 액터에서만 이벤트 생성을 켜면 됐지만 오버랩은 퍼포먼스를 위해 겹침을 확인 할 액터들은 모두 옵션을 활성화해야 합니다.
 
-![Collision-EventOverlap]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-EventOverlap.PNG)
+![Collision-EventOverlap]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-EventOverlap.PNG)
 
 오버랩 이벤트는 히트 이벤트와 다르게 겹침이 시작 될 때와 겹침이 끝날 때의 발동이 나뉘어 있어 각각 경우에 발동합니다.
 
@@ -101,11 +101,11 @@ order : 110
 
 메뉴의 편집 >> 프로젝트 세팅 >> 콜리전 으로 접근시 반응 채널들을 추가 할 수 있습니다.
 
-![Collision-ProjectSettingCollision]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-ProjectSettingCollision.PNG)
+![Collision-ProjectSettingCollision]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-ProjectSettingCollision.PNG)
 
 버튼을 클릭하면 창이 열리는데, 채널의 이름을 적은 후 기본 반응(Default Response)을 선택한 뒤 수락을 클릭하면 됩니다.
 
-![Collision-NewObjectChannel]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-NewObjectChannel.PNG)
+![Collision-NewObjectChannel]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-NewObjectChannel.PNG)
 
 오브젝트와 트레이스 채널을 포함해서 커스텀 채널은 18개까지 가능합니다.
 
@@ -115,12 +115,12 @@ order : 110
 
 오브젝트 채널과 트레이스 채널을 추가한 곳 아래쪽에 프리셋을 추가하거나 편집 할 수 있는 콜리전 프로파일에 접근 할 수 있습니다.
 
-![Collision-CollisionPreset]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-CollisionPreset.PNG)
+![Collision-CollisionPreset]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-CollisionPreset.PNG)
 
 이곳에서 편집하거나 생성하고자 하면 창이 열리는데, 이름과 다양한 설정 값을 수정 할 수 있습니다.  
 콜리전을 켜거나 끄고, 오브젝트 유형을 선택하고, 선택된 오브젝트 유형에 대한 각각의 콜리전 반응을 설정 할 수 있습니다.
 
-![Collision-NewCollsionPreset]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-NewCollsionPreset.PNG)
+![Collision-NewCollsionPreset]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-NewCollsionPreset.PNG)
 
 디테일에서 콜리전 프리셋에서 콜리전 반응을 수정한 값은 디폴트 값으로 리셋하는 버튼이 생겨 특정 콜리전에 대한 반응을 수정한 것을 알 수 있습니다.
 
@@ -131,7 +131,7 @@ order : 110
 콜리전의 프리셋을 `Custom...`으로 선택하면 변경 할 수 없던 콜리전 프리셋의 설정을 변경 할 수 있게 됩니다.  
 이렇게 설정한 콜리전 프리셋은 콜리전 프로파일을 수정하지 않고, 해당 블루프린트 클래스나 인스턴스에서만 콜리전을 수정하게 됩니다.
 
-![Collision-CollisionPresetCustom]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-CollisionPresetCustom.PNG)
+![Collision-CollisionPresetCustom]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-CollisionPresetCustom.PNG)
 
 ## 콜리전 메시 설정
 
@@ -141,12 +141,12 @@ order : 110
 첫번째로 스태틱메시 에셋에 콜리전 영역을 심는 방법입니다.  
 스태틱메시 에셋을 열고 콜리전 그리기 옵션을 선택하면 콜리전을 추가하거나 제거하는 등의 작업을 할 수 있습니다.  
 
-![Collision-StaticMeshAsset]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-StaticMeshAsset.PNG)
+![Collision-StaticMeshAsset]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-StaticMeshAsset.PNG)
 
 두번째로 구체, 박스, 캡슐 모양의 콜리전 컴포넌트를 사용하는 방법입니다.
 이는 해당 액터의 블루프린트 클래스에서 원하는 모양의 콜리전 컴포넌트를 추가하면 사용 할 수 있습니다.
 
-![Collision-CollisionComponent]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-CollisionComponent.PNG)
+![Collision-CollisionComponent]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-CollisionComponent.PNG)
 
 세번째는 피직스 애셋을 사용하는 방법입니다.
 피직스 에셋은 스켈레탈 메시에 사용하는 콜리전과 피직스를 정의하는 데 사용되는 에셋입니다.
@@ -154,7 +154,7 @@ order : 110
 
 피직스 애셋에 자세한 설명은 [언리얼엔진 공식 문서의 피직스 에셋 에디터](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/physics-asset-editor-in-unreal-engine?application_version=5.3)에서 확인 할 수 있습니다.
 
-![Collision-PhysicsAsset]({{site.url}}/images/ue5/ue5/2024-06-20-Collision/Collision-PhysicsAsset.PNG)
+![Collision-PhysicsAsset]({{site.url}}/images/Unreal/ue5/2024-06-20-Collision/Collision-PhysicsAsset.PNG)
 
 
 ## 콜리전 처리 방식 규칙

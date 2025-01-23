@@ -33,23 +33,23 @@ order : 140
 콘텐츠 브라우저에서 우클릭하거나 추가 버튼을 눌러줍니다.  
 그 후 컨텍스트 메뉴의 기본 에셋 생성 카테고리에서 머티리얼을 선택합니다.
 
-![MaterialOutline-SelectMaterial]({{site.url}}/images/ue5/ue5/2024-12-17-MaterialOutline/MaterialOutline-SelectMaterial.PNG)
+![MaterialOutline-SelectMaterial]({{site.url}}/images/Unreal/ue5/2024-12-17-MaterialOutline/MaterialOutline-SelectMaterial.PNG)
 
 콘텐츠 브라우저에 머티리얼이 생성되며, 해당 머티리얼을 설명할 수 있는 고유한 이름을 지정해줍니다.  
 머티리얼에 권장하는 에셋 접두사는 `M_`입니다.
 
-![MaterialOutline-ReName]({{site.url}}/images/ue5/ue5/2024-12-17-MaterialOutline/MaterialOutline-ReName.PNG)
+![MaterialOutline-ReName]({{site.url}}/images/Unreal/ue5/2024-12-17-MaterialOutline/MaterialOutline-ReName.PNG)
 
 ## 머티리얼 그래프
 
-![MaterialOutline-MaterialGraph]({{site.url}}/images/ue5/ue5/2024-12-17-MaterialOutline/MaterialOutline-MaterialGraph.PNG)
+![MaterialOutline-MaterialGraph]({{site.url}}/images/Unreal/ue5/2024-12-17-MaterialOutline/MaterialOutline-MaterialGraph.PNG)
 
 이미지의 강조된 영역은 머티리얼 그래프(Material Graph)입니다.  
 머티리얼 그래프는 메인 머티리얼 노드(Main Material Node)와 머티리얼 표현식 노드(Material Expression Nodes)들로 이루어집니다.  
 
 머티리얼 그래프에서 데이터는 왼쪽에서 오른쪽으로 흐릅니다.
 
-![MaterialOutline-MainAndExpression]({{site.url}}/images/ue5/ue5/2024-12-17-MaterialOutline/MaterialOutline-MainAndExpression.PNG)
+![MaterialOutline-MainAndExpression]({{site.url}}/images/Unreal/ue5/2024-12-17-MaterialOutline/MaterialOutline-MainAndExpression.PNG)
 
 빨간색 박스에 있는 메인 머티리얼 노드는 모든 머티리얼 네트워크가 종료되는 지점입니다.  
 메인 머티리얼 노드 입력에 어떤 머티리얼 표현식 노드 조합이 연결되는지에 따라, 레벨에서 컴파일 및 사용하면 최종 머티리얼의 전반적인 외관이 결정됩니다.
@@ -72,7 +72,7 @@ order : 140
 메인 머티리얼 노드를 선택하면 디테일(Details) 패널에 글로벌 머티리얼 프로퍼티 및 세팅이 표시됩니다.  
 머티리얼 프로퍼티의 빈 공간을 아무 곳이나 클릭하면 머티리얼 프로퍼티도 표시할 수 있습니다.
 
-![MaterialOutline-Properties]({{site.url}}/images/ue5/ue5/2024-12-17-MaterialOutline/MaterialOutline-Properties.PNG)
+![MaterialOutline-Properties]({{site.url}}/images/Unreal/ue5/2024-12-17-MaterialOutline/MaterialOutline-Properties.PNG)
 
 머티리얼 도메인, 블렌드 모드, 셰이딩 모델 이 세 가지 설정은 머티리얼의 토대를 형성하고 사용 방법을 결정하며, 머티리얼 제작 과정 초기 단계에서 중요합니다.  
 이외에도 나나이트나 반투명에 관한 옵션도 존재하며, 프리뷰 뷰포트에서 머리티얼을 미리 볼 때 사용할 스태틱 메시도 설정할 수 있습니다.
