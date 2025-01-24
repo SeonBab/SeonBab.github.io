@@ -226,4 +226,4 @@ void OnItemPickedUp();
 
 # 참고
 
-[언리얼 엔진 리플렉션 시스템](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/reflection-system-in-unreal-engine)
+[언리얼 엔진 리플렉션 시스템](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/reflection-system-in-unreal-engine){: target="_blank"}

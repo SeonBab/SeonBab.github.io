@@ -8,7 +8,7 @@ categories:
 tag: [Unreal Engine, UE5]
 
 date: 2024-06-01
-last_modified_at: 2024-06-01
+last_modified_at: 2025-01-24
 
 order : 60
 ---
@@ -19,9 +19,9 @@ order : 60
 정리하자면 다음과 같습니다.
 
 + 프로젝트 내의 모든 에셋을 탐색하고 에셋과 상호작용합니다.
-- 텍스트 필터를 사용해 에셋을 검색합니다.(고급 필터링을 조합할 수 있다.)
++ 텍스트 필터를 사용해 에셋을 검색합니다.(고급 필터링을 조합할 수 있다.)
 + 에셋을 개인, 로컬, 공유 컬렉션으로 정리합니다.
-- 문제가 있을 수 있는 에셋을 식별합니다.
++ 문제가 있을 수 있는 에셋을 식별합니다.
 + 콘텐츠 폴더 간 또는 다른 프로젝트로 에셋을 마이그레이션합니다.
 
 ## 콘텐츠 브라우저 패널 열기
@@ -63,7 +63,7 @@ order : 60
 
 ![ContentBrowser-Sources]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-Sources.PNG)
 
-자세한 정보는 [소스 패널 참고 자료](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/sources-panel-reference-in-unreal-engine)에서 참조 할 수 있습니다.
+자세한 정보는 [소스 패널 참고 자료](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/sources-panel-reference-in-unreal-engine){: target="_blank"}에서 참조 할 수 있습니다.
 
 ## 컬렉션
 
@@ -73,7 +73,7 @@ order : 60
 에셋 뷰에서 한 번에 한 컬렉션의 콘텐츠만 볼 수 있습니다.  
 컬렉션은 머신에 로컬로 저장할 수도 있고, 다른 사용자와 공유할 수도 있습니다.
 
-자세한 정보는 [필터 및 컬렉션](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/filters-and-collections-in-unreal-engine)에서 참조 할 수 있습니다.
+자세한 정보는 [필터 및 컬렉션](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/filters-and-collections-in-unreal-engine){: target="_blank"}에서 참조 할 수 있습니다.
 
 ![ContentBrowser-Collections]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-Collections.PNG)
 
@@ -87,7 +87,7 @@ order : 60
 
 ![ContentBrowser-Filters]({{site.url}}/images/Unreal/ue5/2024-06-01-ContentBrowser/ContentBrowser-Filters.PNG)
 
-자세한 정보는 [필터 및 컬렉션](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/filters-and-collections-in-unreal-engine)에서 참조 할 수 있습니다.
+자세한 정보는 [필터 및 컬렉션](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/filters-and-collections-in-unreal-engine){: target="_blank"}에서 참조 할 수 있습니다.
 
 ## 검색 바
 

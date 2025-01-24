@@ -8,7 +8,7 @@ categories:
 tag: [GitHub]
 
 date: 2024-04-26
-last_modified_at: 2024-05-02
+last_modified_at: 2025-01-24
 
 order : 1
 
@@ -147,7 +147,7 @@ ___
 이모지를 그대로 복사해와서 사용 할 수 있습니다.  
 혹은 콜론, 이모지 이름 순서`:EMOJICODE:`로 입력해 글에 이모지를 추가할 수 있습니다.
 
-이모지의 이름은 [emojipedia](https://emojipedia.org/ko)를 참고할 수 있습니다.
+이모지의 이름은 [emojipedia](https://emojipedia.org/ko){: target="_blank"}를 참고할 수 있습니다.
 
 ```
 :rice:

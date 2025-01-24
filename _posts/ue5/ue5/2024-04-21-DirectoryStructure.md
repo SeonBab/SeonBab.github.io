@@ -8,7 +8,7 @@ categories:
 tag: [Unreal Engine, UE5]
 
 date: 2024-04-21
-last_modified_at: 2024-04-21
+last_modified_at: 2025-01-24
 
 order : 10
 ---
@@ -175,4 +175,4 @@ C++ 프로젝트가 아니라면 생성되어 있지 않는 폴더입니다.
 공용 게임 오브젝트 클래스 구현(.cpp) 파일이 들어갑니다.
 
 # 참고
-https://dev.epicgames.com/documentation/ko-kr/unreal-engine/unreal-engine-directory-structure?application_version=5.3
+[디렉터리 구조](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/unreal-engine-directory-structure?application_version=5.5){: target="_blank"}

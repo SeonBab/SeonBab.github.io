@@ -8,7 +8,7 @@ categories:
 tag: [Unreal Engine, UE5]
 
 date: 2025-01-23
-last_modified_at: 2025-01-23
+last_modified_at: 2025-01-24
 
 order : 200020
 ---
@@ -116,6 +116,6 @@ Play In Editor(PIE)나 런타임에서 게임이 시작될 때, 혹은 이미 �
 
 `Destroy`함수에 대한 레거시 응답이므로, 여기에 있는 로직을 EndPlay로 옮기는 것이 좋습니다.
 
-## 참고
+# 참고
 
 [액터 라이프사이클](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/unreal-engine-actor-lifecycle){: target="_blank"}
