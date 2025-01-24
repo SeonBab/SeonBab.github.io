@@ -8,7 +8,7 @@ categories:
 tag: [Unreal Engine, UE5, UECpp]
 
 date: 2025-01-23
-last_modified_at: 2025-01-23
+last_modified_at: 2025-01-24
 
 order : 70
 ---
@@ -104,7 +104,7 @@ void AItem::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	// 기본 이동 속도 (1초에 100유닛 이동)
+	// 기본 이동 속도 (1초에 200유닛 이동)
 	float MoveSpeedZ = 200.f;
 
 	// 초당 MoveSpeedZ만큼, 한 프레임당 (MoveSpeedZ * DeltaTime)만큼 Z축으로 이동
