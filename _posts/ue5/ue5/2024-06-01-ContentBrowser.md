@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "[UE5] 언리얼 엔진 콘텐츠 브라우저"
+title: "[UE5] 콘텐츠 브라우저"
 
 categories:
     - UE5

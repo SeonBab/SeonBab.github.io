@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "[UE5] 언리얼 엔진 블루프린트"
+title: "[UE5] 블루프린트"
 
 categories:
     - UE5
@@ -10,7 +10,7 @@ tag: [Unreal Engine, UE5]
 date: 2024-06-03
 last_modified_at: 2025-01-24
 
-order : 75
+order : 100000
 ---
 
 # 블루프린트

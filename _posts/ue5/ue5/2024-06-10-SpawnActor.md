@@ -1,16 +1,16 @@
 ---
 layout: single
 
-title: "[UE5] 언리얼 엔진 액터 스폰"
+title: "[UE5] 블루프린트 액터 스폰"
 
 categories:
     - UE5
 tag: [Unreal Engine, UE5]
 
 date: 2024-06-10
-last_modified_at: 2024-06-10
+last_modified_at: 2025-01-24
 
-order : 90
+order : 100010
 ---
 
 # 액터 스폰
@@ -21,8 +21,8 @@ order : 90
 
 ![SpawnActor-PickBPClass]({{site.url}}/images/Unreal/ue5/2024-06-10-SpawnActor/SpawnActor-PickBPClass.PNG)
 
-플레이어 캐릭터로 정해진 클래스의 블루 프린트를 편집하겠습니다.  
-해당 블루 프린트 클래스를 실행해줍니다.
+플레이어 캐릭터로 정해진 클래스의 블루프린트를 편집하겠습니다.  
+해당 블루프린트 클래스를 실행해줍니다.
 
 저는 언리얼에서 제공하는 삼인칭 템플릿의 캐릭터를 수정하겠습니다.
 
@@ -44,7 +44,7 @@ order : 90
 
 노드의 파라미터에 값을 입력해줘야 합니다.  
 우선 액터 클래스를 지정해주겠습니다.  
-우리가 스폰하고자하는 액터의 클래스를 찾아 지정해주면 됩니다.
+우리가 스폰하고자 하는 액터의 클래스를 찾아 지정해주면 됩니다.
 
 ![SpawnActor-SettingSpawnTransform]({{site.url}}/images/Unreal/ue5/2024-06-10-SpawnActor/SpawnActor-SettingSpawnTransform.PNG)
 

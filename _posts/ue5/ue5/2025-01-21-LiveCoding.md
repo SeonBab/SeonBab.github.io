@@ -1,19 +1,19 @@
 ---
 layout: single
 
-title: "[UE5] 언리얼 엔진 라이브 코딩"
+title: "[UE5] 라이브 코딩"
 
 categories:
     - UE5
 tag: [Unreal Engine, UE5]
 
 date: 2025-01-21
-last_modified_at: 2025-01-21
+last_modified_at: 2025-01-24
 
-order : 70
+order : 200005
 ---
 
-# 언리얼 엔진 라이브 코딩
+# 라이브 코딩
 
 라이브 코딩(Live Coding)을 사용하면 에디터를 일일이 끄고 켜는 번거로움이 줄어듭니다.
 

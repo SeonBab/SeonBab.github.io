@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "[UE5] 언리얼 엔진 뷰포트"
+title: "[UE5] 뷰포트"
 
 categories:
     - UE5

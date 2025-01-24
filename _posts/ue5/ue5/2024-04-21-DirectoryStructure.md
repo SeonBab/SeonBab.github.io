@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "[UE5] 언리얼 엔진 디렉터리 구조"
+title: "[UE5] 디렉터리 구조"
 
 categories:
     - UE5
@@ -13,7 +13,7 @@ last_modified_at: 2024-04-21
 order : 10
 ---
 
-# 언리얼 엔진 디렉터리 구조
+# 디렉터리 구조
 
 최상위 레벨에는 Engine 디렉토리와 게임 프로젝트가 있습니다.  
 

@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "[UE5] 언리얼 엔진 액터의 라이프사이클"
+title: "[UE5] 액터의 라이프사이클"
 
 categories:
     - UE5
@@ -10,7 +10,7 @@ tag: [Unreal Engine, UE5]
 date: 2025-01-23
 last_modified_at: 2025-01-23
 
-order : 300
+order : 200020
 ---
 
 # 액터의 라이프사이클

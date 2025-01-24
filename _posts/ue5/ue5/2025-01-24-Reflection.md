@@ -1,16 +1,16 @@
 ---
 layout: single
 
-title: "[UE C++] 언리얼 엔진 리플렉션"
+title: "[UE5] 리플렉션"
 
 categories:
-    - UECpp
-tag: [Unreal Engine, UE5, UECpp]
+    - UE5
+tag: [Unreal Engine, UE5]
 
 date: 2025-01-24
 last_modified_at: 2025-01-24
 
-order : 100
+order : 200010
 ---
 
 # 리플렉션
@@ -98,13 +98,13 @@ C++ 클래스로부터 블루프린트 클래스를 상속받아 생성하는 �
 
 이후 저장할 폴더를 지정하거나, 블루프린트의 이름을 정해주면 됩니다.
 
-![Reflection-CppInheritance1]({{site.url}}/images/Unreal/uecpp/2025-01-24-Reflection/Reflection-CppInheritance1.PNG)
+![Reflection-CppInheritance1]({{site.url}}/images/Unreal/ue5/2025-01-24-Reflection/Reflection-CppInheritance1.PNG)
 
 콘텐츠 브라우저에서 컨텍스트 메뉴 > 블루프린트 클래스 선택 > `Item`클래스 검색 및 선택
 
 이후 저장할 폴더를 지정하거나, 블루프린트의 이름을 정해주면 됩니다.
 
-![Reflection-CppInheritance2.PNG]({{site.url}}/images/Unreal/uecpp/2025-01-24-Reflection/Reflection-CppInheritance2.PNG)
+![Reflection-CppInheritance2.PNG]({{site.url}}/images/Unreal/ue5/2025-01-24-Reflection/Reflection-CppInheritance2.PNG)
 
 ## 변수에 리플렉션 등록
 
@@ -163,11 +163,11 @@ Category 지정자
 
 블루프린트 클래스를 통해 해당 변수들을 에디터 내에서 조정할 수 있게 됩니다.
 
-![Reflection-Variable1]({{site.url}}/images/Unreal/uecpp/2025-01-24-Reflection/Reflection-Variable1.PNG)
+![Reflection-Variable1]({{site.url}}/images/Unreal/ue5/2025-01-24-Reflection/Reflection-Variable1.PNG)
 
 블루프린트 클래스 인스턴스들의 디테일 패널을 통해 해당 변수들을 조정할 수 있게 됩니다.
 
-![Reflection-Variable2]({{site.url}}/images/Unreal/uecpp/2025-01-24-Reflection/Reflection-Variable2.PNG)
+![Reflection-Variable2]({{site.url}}/images/Unreal/ue5/2025-01-24-Reflection/Reflection-Variable2.PNG)
 
 ## 함수에 리플렉션 등록
 
@@ -215,7 +215,7 @@ void OnItemPickedUp();
 
 블루프린트의 이벤트 그래프에서 우클릭해 컨텍스트 메뉴를 열고, 함수 이름을 검색하면 아래와 같은 노드를 얻을 수 있습니다.
 
-![Reflection-FunctionNodes]({{site.url}}/images/Unreal/uecpp/2025-01-24-Reflection/Reflection-FunctionNodes.PNG)
+![Reflection-FunctionNodes]({{site.url}}/images/Unreal/ue5/2025-01-24-Reflection/Reflection-FunctionNodes.PNG)
 
 + `ResetActorPosition`: `BlueprintCallable`로 선언했으므로, 노드로 실행(Exec)할 수 있습니다.
 + `GetRotationSpeed`: `BlueprintPure`로 선언했으므로, 단순히 값만 반환하는 Getter 노드로 사용됩니다.

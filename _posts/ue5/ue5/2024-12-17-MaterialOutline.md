@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "[UE5] 언리얼 엔진 머티리얼 개요"
+title: "[UE5] 머티리얼 개요"
 
 categories:
     - UE5

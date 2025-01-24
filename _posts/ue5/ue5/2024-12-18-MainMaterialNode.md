@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "[UE5] 언리얼 엔진 메인 머티리얼 노드"
+title: "[UE5] 메인 머티리얼 노드"
 
 categories:
     - UE5

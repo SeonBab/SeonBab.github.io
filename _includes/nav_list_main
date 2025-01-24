@@ -59,13 +59,6 @@
                         {% endif %}
                     {% endfor %}
                 </ul>
-                <ul>
-                    {% for category in site.categories %}
-                        {% if category[0] == "UECpp" %}
-                            <li><a href="/categories/UECpp" class="">언리얼 엔진 C++ ({{category[1].size}})</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
             <span class="nav__sub-title">코딩 테스트</span>
                 <ul>
                     {% for category in site.categories %}

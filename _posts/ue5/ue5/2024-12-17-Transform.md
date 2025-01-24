@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "[UE5] 언리얼 엔진 트랜스폼"
+title: "[UE5] 트랜스폼"
 
 categories:
     - UE5

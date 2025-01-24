@@ -1,22 +1,22 @@
 ---
 layout: single
 
-title: "[UE C++] 언리얼 엔진 트랜스폼 변경"
+title: "[UE5] 트랜스폼 변경"
 
 categories:
-    - UECpp
-tag: [Unreal Engine, UE5, UECpp]
+    - UE5
+tag: [Unreal Engine, UE5]
 
 date: 2025-01-23
 last_modified_at: 2025-01-24
 
-order : 70
+order : 200070
 ---
 
 # 트랜스폼 변경
 
 트랜스폼(Transform)에 대한 기본적인 정보는 다른 글에 정리해 두었습니다.  
-[언리얼 엔진 트랜스폼]({{ "/ue5/Transform/" | relative_url }}){: target="_blank"}
+[[UE5] 트랜스폼]({{ "/ue5/Transform/" | relative_url }}){: target="_blank"}
 
 C++에서 트랜스폼은 효율적으로 관리하기 위해 위치, 회전, 스케일을 하나로 묶어 구조체로 만든 `FTransform`이 있습니다.
 
@@ -95,7 +95,7 @@ void AItem::BeginPlay()
 
 시작하기 전과 후의 트랜스폼 값이 달라진 것을 알 수 있습니다.
 
-![ModifyTransform-Begin]({{site.url}}/images/Unreal/uecpp/2025-01-23-ModifyTransform/ModifyTransform-Begin.PNG)
+![ModifyTransform-Begin]({{site.url}}/images/Unreal/ue5/2025-01-23-ModifyTransform/ModifyTransform-Begin.PNG)
 
 다음은 `Tick`함수를 통해 매 프레임마다 이동, 회전, 스케일 값을 변경하도록 구현해보겠습니다.
 
@@ -138,4 +138,4 @@ void AItem::Tick(float DeltaTime)
 
 해당 `Tick`함수의 코드가 작동되며 트랜스폼 값이 달라진 것을 알 수 있습니다.
 
-![ModifyTransform-Tick]({{site.url}}/images/Unreal/uecpp/2025-01-23-ModifyTransform/ModifyTransform-Tick.PNG)
+![ModifyTransform-Tick]({{site.url}}/images/Unreal/ue5/2025-01-23-ModifyTransform/ModifyTransform-Tick.PNG)

@@ -1,19 +1,19 @@
 ---
 layout: single
 
-title: "[UE C++] 언리얼 엔진 비주얼 스튜디오 빌드"
+title: "[UE5] 비주얼 스튜디오 빌드"
 
 categories:
-    - UECpp
-tag: [Unreal Engine, UE5, UECpp]
+    - UE5
+tag: [Unreal Engine, UE5]
 
 date: 2025-01-21
-last_modified_at: 2025-01-21
+last_modified_at: 2025-01-24
 
-order : 30
+order : 200001
 ---
 
-# 언리얼 엔진 비주얼 스튜디오 빌드
+# 비주얼 스튜디오 빌드
 
 언리얼 엔진에서 C++ 코드를 수정했다면, 컴파일(Compile) + 링크(Link)해 동적 라이브러리(DLL)로 만드는 것이 빌드의 목적입니다.
 
@@ -23,7 +23,7 @@ order : 30
 
 비주얼 스튜디오 상단 툴바에는 빌드 구성(Configuration)과 플랫폼(Platform)을 선택하는 드롭다운이 있습니다.
 
-![Configuration_Platform]({{site.url}}/images/Unreal/uecpp/2025-01-21-VisualStudioBuild/VisualStudioBuild-Configuration_Platform.PNG)
+![Configuration_Platform]({{site.url}}/images/Unreal/ue5/2025-01-21-VisualStudioBuild/VisualStudioBuild-Configuration_Platform.PNG)
 
 왼쪽 - 빌드구성(DebugGame, Development Editor 등)
 
@@ -66,11 +66,11 @@ order : 30
 
 처음 빌드한 경우 엔진 모듈까지 모두 새로 컴파일하므로 오래 걸릴 수 있지만, 이후에는 변경된 소스만 컴파일 해서 빌드 시간이 크게 단축됩니다.
 
-![Build_Completed]({{site.url}}/images/Unreal/uecpp/2025-01-21-VisualStudioBuild/VisualStudioBuild-Build_Completed.PNG)
+![Build_Completed]({{site.url}}/images/Unreal/ue5/2025-01-21-VisualStudioBuild/VisualStudioBuild-Build_Completed.PNG)
 
 이미지 처럼 "Build completed"메시지가 나오면 정상 빌드된 것입니다.
 
-![DLL]({{site.url}}/images/Unreal/uecpp/2025-01-21-VisualStudioBuild/VisualStudioBuild-DLL.PNG)
+![DLL]({{site.url}}/images/Unreal/ue5/2025-01-21-VisualStudioBuild/VisualStudioBuild-DLL.PNG)
 
 빌드 후, 프로젝트 폴더의 `Binaries/Win64` 폴더 내에 `UnrealEditor-프로젝트명.dll` 등이 새로 생성됩니다.
 
@@ -80,7 +80,7 @@ order : 30
 
 엔진, 유틸리티, 게임 등 모든 모듈을 통째로 빌드합니다.
 
-![Build_Solution]({{site.url}}/images/Unreal/uecpp/2025-01-21-VisualStudioBuild/VisualStudioBuild-Build_Solution.PNG)
+![Build_Solution]({{site.url}}/images/Unreal/ue5/2025-01-21-VisualStudioBuild/VisualStudioBuild-Build_Solution.PNG)
 
 첫 빌드나 엔진 소스를 수정했을 때 또는 엔진 전체 파일이 필요한 경우에 사용합니다.
 
@@ -90,6 +90,6 @@ order : 30
 
 엔진이나 다른 모듈을 제외하고, 게임 프로젝트 코드만 빠르게 빌드합니다.
 
-![Build]({{site.url}}/images/Unreal/uecpp/2025-01-21-VisualStudioBuild/VisualStudioBuild-Build.PNG)
+![Build]({{site.url}}/images/Unreal/ue5/2025-01-21-VisualStudioBuild/VisualStudioBuild-Build.PNG)
 
 일반적으로 C++ 로직만 수정했다면 이 방법을 사용하는 것이 효율적입니다.
