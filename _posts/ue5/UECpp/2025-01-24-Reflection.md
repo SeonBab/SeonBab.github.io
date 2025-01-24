@@ -53,7 +53,7 @@ class SPARTAPROJECT_API AItem : public AActor
 	GENERATED_BODY()
 	
 public:	
-	AItem();
+    AItem();
 	
 protected:
 	USceneComponent* SceneRoot;
@@ -113,15 +113,14 @@ C++ 클래스로부터 블루프린트 클래스를 상속받아 생성하는 �
 멤버 변수에 리플렉션을 적용한 예시입니다.
 
 ```cpp
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Item|Components")
-	USceneComponent* SceneRoot;	
-	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item|Components")
-	UStaticMeshComponent* StaticMeshComp;
+UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Item|Components")
+USceneComponent* SceneRoot;	
 
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item|Components")
+UStaticMeshComponent* StaticMeshComp;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Item|Properties")
-	float RotationSpeed;
+UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Item|Properties")
+float RotationSpeed;
 ```
 
 ### UPROPERTY() 주요 지정자
@@ -181,17 +180,17 @@ Category 지정자
 멤버 함수에 리플렉션을 적용한 예시입니다.
 
 ```cpp
-	// 함수를 블루프린트에서 호출 가능하도록 설정
-	UFUNCTION(BlueprintCallable, Category="Item|Actions")
-	void ResetActorPosition();
-		
-	// 블루프린트에서 값만 반환하도록 설정
-    UFUNCTION(BlueprintPure, Category = "Item|Properties")
-    float GetRotationSpeed() const;
+// 함수를 블루프린트에서 호출 가능하도록 설정
+UFUNCTION(BlueprintCallable, Category="Item|Actions")
+void ResetActorPosition();
 
-	// C++에서 호출되지만 구현은 블루프린트에서 수행
-    UFUNCTION(BlueprintImplementableEvent, Category = "Item|Event")
-    void OnItemPickedUp();
+// 블루프린트에서 값만 반환하도록 설정
+UFUNCTION(BlueprintPure, Category = "Item|Properties")
+float GetRotationSpeed() const;
+
+// C++에서 호출되지만 구현은 블루프린트에서 수행
+UFUNCTION(BlueprintImplementableEvent, Category = "Item|Event")
+void OnItemPickedUp();
 ```
 
 ### UFUNCTION() 주요 지정자
