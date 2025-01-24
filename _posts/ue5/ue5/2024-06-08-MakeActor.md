@@ -1,14 +1,14 @@
 ---
 layout: single
 
-title: "[UE5] 언리얼 엔진 액터 제작"
+title: "[UE5] 언리얼 엔진 블루프린트로 액터 제작"
 
 categories:
     - UE5
 tag: [Unreal Engine, UE5]
 
 date: 2024-06-08
-last_modified_at: 2024-06-08
+last_modified_at: 2025-01-24
 
 order : 80
 ---
@@ -50,12 +50,12 @@ StaticMeshActor, CameraActor, PlayerStartActor 등이 있습니다.
 
 좌측 상단에 컴포넌트 탭에서 `+추가`버튼을 클릭해 스태틱 메시 컴포넌트를 추가하겠습니다.
 
-스태틱 메시란 비디오 메모리에 캐시되고 그래픽 카드에서 렌더링할 수 있는 폴리곤 세트로 구성되는 지오메트리 조각을 말합니다.  
-스태틱 메시를 가진다면 플레이하는 유저가 시각적으로 볼 수 있게됩니다.
+스태틱 메시란 비디오 메모리에 캐시되며 그래픽 카드에서 렌더링할 수 있는 폴리곤 세트로 구성되는 지오메트리 조각을 말합니다.  
+스태틱 메시를 추가하면, 개임 내에서 유저가 해당 오브젝트를 시작적으로 확인 할 수 있습니다.
 
 ![MakeActor-StaticMeshDetails]({{site.url}}/images/Unreal/ue5/2024-06-08-MakeActor/MakeActor-StaticMeshDetails.PNG)
 
-스태틱 매시 컴포넌트를 선택하고 디테일 패널의 프로퍼티를 수정하겠습니다.  
+스태틱 메시 컴포넌트를 선택하고 디테일 패널에서 프로퍼티를 수정하겠습니다.  
 
 ![MakeActor-Viewport2]({{site.url}}/images/Unreal/ue5/2024-06-08-MakeActor/MakeActor-Viewport2.PNG)
 
@@ -70,10 +70,10 @@ StaticMeshActor, CameraActor, PlayerStartActor 등이 있습니다.
 
 ![MakeActor-Viewport3]({{site.url}}/images/Unreal/ue5/2024-06-08-MakeActor/MakeActor-Viewport3.PNG)
 
-머티리얼을 부여해준 후 뷰포트를 확인해보면 깔끔하게 흰색으로 구 모양의 액터가 만들어졌습니다.
+머티리얼을 부여해준 후 뷰포트를 확인해보면 깔끔한 흰색을 가진 구 모양의 액터가 만들어졌습니다.
 
 ## 액터 배치하기
 
 ![MakeActor-ArrangeActor]({{site.url}}/images/Unreal/ue5/2024-06-08-MakeActor/MakeActor-ArrangeActor.PNG)
 
-지금까지 만든 액터 클래스를 레벨에 배치하기 위해서는 에셋 뷰에서 뷰포트로 클래스를 드래그해서 배치할 수 있습니다.
+지금까지 만든 액터 클래스를 레벨에 배치하기 위해서는 에셋 브라우저에서 뷰포트로 클래스를 드래그해서 배치할 수 있습니다.
