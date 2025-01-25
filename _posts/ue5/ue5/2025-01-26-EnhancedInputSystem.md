@@ -253,7 +253,7 @@ public:
 헤더에 `BeginPlay`함수를 선언합니다.
 
 ```cpp
-	virtual void BeginPlay() override;
+virtual void BeginPlay() override;
 ```
 
 ```cpp
