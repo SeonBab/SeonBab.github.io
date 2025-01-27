@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "[UE5] 캐릭터 이동 구현"
+title: "[UE5] 캐릭터 이동, 점프, 마우스 시점 회전, 달리기 구현"
 
 categories:
     - UE5
@@ -13,9 +13,11 @@ last_modified_at: 2025-01-27
 order : 200150
 ---
 
-# 캐릭터 이동 구현
+# 캐릭터 기능 구현
 
 [[UE5] 향상된 입력 시스템]({{ "/ue5/EnhancedInputSystem/" | relative_url }}){: target="_blank"}에서 구현한 입력 바인딩을 통해 캐릭터의 이동, 점프, 마우스 회전, 달리기를 구현해보도록 하겠습니다.
+
+해당 글에서는 애니메이션을 포함하지 않은 로직을 구현합니다.
 
 ## 이동
 
