@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "[UE5] 이동 액터"
+title: "[UE5] 왕복으로 이동하는 액터 구현"
 
 categories:
     - UE5Dev
@@ -15,48 +15,24 @@ order : 100000
 
 # 이동 액터
 
-헤더
+시작 위치를 기준으로 왕복운동하는 액터를 구현해보겠습니다.
+
+## 컴포넌트 추가
+
+액터는 기본적으로 컴포넌트를 가지지 않습니다.  
+그러므로 헤더에 씬 컴포넌트와 스태틱 메시 컴포넌트를 추가해줍니다.
 
 ```cpp
-#pragma once
-
-#include "CoreMinimal.h"
-#include "BaseActor.h"
-#include "MovingActor.generated.h"
-
-UCLASS()
-class SPARTAPUZZLE_API AMovingActor : public ABaseActor
-{
-	GENERATED_BODY()
-
-protected:
-	virtual void BeginPlay() override;
-
-	virtual void Tick(float DeltaTime) override;
-	
-private:
-	// 이동 함수
-	void Move(float DeltaTime);
-
-private:
-	// 기본 컴포넌트
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
-	TObjectPtr<USceneComponent> SceneRoot;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
-	TObjectPtr<UStaticMeshComponent> StaticMeshComp;
-
-	// 시작 위치
-	FVector StartLocation;
-	// 이동할 방향
-	FVector Direction;
-};
+// 기본 컴포넌트
+UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+TObjectPtr<USceneComponent> SceneRoot;
+UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+TObjectPtr<UStaticMeshComponent> StaticMeshComp;
 ```
 
-소스 코드
+그 후 생성자에서 컴포넌트를 생성합니다.
 
 ```cpp
-#include "MovingActor.h"
-
 AMovingActor::AMovingActor()
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -68,7 +44,22 @@ AMovingActor::AMovingActor()
 	StaticMeshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
 	StaticMeshComp->SetupAttachment(SceneRoot);
 }
+```
 
+## 기능 구현
+
+시작 위치와 움직이려는 방향을 저장하는 변수를 생성합니다.
+
+```cpp
+// 시작 위치
+FVector StartLocation;
+// 이동할 방향
+FVector Direction;
+```
+
+게임 시작 시 시작 위치와 이동할 방향을 설정합니다.
+
+```cpp
 void AMovingActor::BeginPlay()
 {
 	Super::BeginPlay();
@@ -76,16 +67,17 @@ void AMovingActor::BeginPlay()
 	StartLocation = GetActorLocation();
 	Direction = FVector::One();
 }
+```
 
+매 틱마다 액터를 이동 시킵니다.
+
+`DeltaTime`으로 액터를 흐른 시간에 따라 이동시킵니다.
+
+```cpp
 void AMovingActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	Move(DeltaTime);
-}
-
-void AMovingActor::Move(float DeltaTime)
-{
 	// 현재 위치 기반으로 시간에 비례해 이동할 위치를 구함
 	FVector NewLocation = GetActorLocation();
 	NewLocation += MoveSpeed * DeltaTime * Direction;
@@ -117,3 +109,5 @@ void AMovingActor::Move(float DeltaTime)
 	SetActorLocation(NewLocation);
 }
 ```
+
+`X`, `Y`, `Z` 축으로 왕복 이동하는 코드입니다.
