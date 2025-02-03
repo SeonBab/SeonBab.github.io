@@ -4,13 +4,13 @@ layout: single
 title: "[UE5] 블루프린트로 액터 제작"
 
 categories:
-    - UE5
-tag: [Unreal Engine, UE5]
+    - UE5Dev
+tag: [UE5, UE5Dev]
 
 date: 2024-06-08
 last_modified_at: 2025-01-24
 
-order : 100005
+order : 10
 ---
 
 # 액터

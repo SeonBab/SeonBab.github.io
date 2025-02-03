@@ -4,13 +4,13 @@ layout: single
 title: "[UE5] 블루프린트 움직이는 액터"
 
 categories:
-    - UE5
-tag: [Unreal Engine, UE5]
+    - UE5Dev
+tag: [UE5, UE5Dev]
 
 date: 2024-06-15
 last_modified_at: 2025-01-24
 
-order : 100005
+order : 30
 ---
 
 # 움직이는 액터
