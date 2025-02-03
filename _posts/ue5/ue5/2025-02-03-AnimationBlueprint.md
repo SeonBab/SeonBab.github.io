@@ -73,4 +73,4 @@ order : 100010
 
 # 참고
 
-[애니메이션 블루프린트 에디터](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/animation-blueprint-editor-in-unreal-engine)
+[애니메이션 블루프린트 에디터](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/animation-blueprint-editor-in-unreal-engine){: target="_blank"}
