@@ -25,13 +25,6 @@
                 </ul>
                 <ul>
                     {% for category in site.categories %}
-                        {% if category[0] == "CppSTL" %}
-                            <li><a href="/categories/cppstl" class="">C++ STL ({{category[1].size}})</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul>
-                    {% for category in site.categories %}
                         {% if category[0] == "DataStructure" %}
                             <li><a href="/categories/datastructure" class="">자료구조 ({{category[1].size}})</a></li>
                         {% endif %}

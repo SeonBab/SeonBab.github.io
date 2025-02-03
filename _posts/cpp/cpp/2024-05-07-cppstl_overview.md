@@ -1,16 +1,16 @@
 ---
 layout: single
 
-title: "C++ 표준 템플릿 라이브러리(STL) 개요"
+title: "[C++] 표준 템플릿 라이브러리(STL) 개요"
 
 categories:
-    - CppSTL
-tag: [Cpp, CppSTL]
+    - Cpp
+tag: [Cpp]
 
 date: 2024-05-07
-last_modified_at: 2024-05-07
+last_modified_at: 2025-02-03
 
-order : 1
+order : 100000
 ---
 
 # C++ 표준 템플릿 라이브러리(STL) 개요

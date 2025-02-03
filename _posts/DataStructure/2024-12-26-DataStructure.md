@@ -1,14 +1,14 @@
 ---
 layout: single
 
-title: "[Data Structure] 자료구조란"
+title: "[C++ Data Structure] 자료구조란"
 
 categories:
     - DataStructure
 tag: [Cpp, 자료구조]
 
 date: 2024-12-26
-last_modified_at: 2025-01-06
+last_modified_at: 2025-02-03
 
 order : 1
 ---

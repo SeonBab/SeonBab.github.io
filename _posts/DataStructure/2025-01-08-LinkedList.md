@@ -1,16 +1,16 @@
 ---
 layout: single
 
-title: "[Data Structure] 링크드 리스트"
+title: "[C++ Data Structure] 링크드 리스트"
 
 categories:
     - DataStructure
 tag: [Cpp, 자료구조]
 
 date: 2025-01-08
-last_modified_at: 2025-01-09
+last_modified_at: 2025-02-03
 
-order : 10
+order : 50
 ---
 
 # 링크드 리스트
