@@ -18,10 +18,10 @@ order : 30
 액터는 레벨에서 트랜스폼 값을 가질 수 있습니다.  
 트랜스폼에는 위치, 회전, 스케일이 있고 위치와 회전을 게임 실행중에 변경하는 방법을 알아보겠습니다.
 
-![MovableActor-PickActor]({{site.url}}/images/Unreal/ue5/2024-06-15-MovableActor/MovableActor-PickActor.PNG)
+![MovableActor-PickActor]({{site.url}}/images/Unreal/UE5Dev/2024-06-15-MovableActor/MovableActor-PickActor.PNG)
 
 우선 움직이고자하는 액터를 하나 만들어줍니다.  
-액터를 만드는 방법은 제가 전에 작성한 [[UE5] 언리얼 엔진 액터 제작](https://seonbab.github.io/ue5/MakeActor/)에서 알아 볼 수 있습니다.
+액터를 만드는 방법은 제가 전에 작성한 [[UE5] 언리얼 엔진 액터 제작](https://seonbab.github.io/UE5Dev/MakeActor/)에서 알아 볼 수 있습니다.
 
 액터를 이동하고 회전하는 것은 블루프린트의 이벤트그래프를 사용하겠습니다.  
 이벤트는 `Tick` 이벤트를 사용해 매 프레임 움직이도록 만들겠습니다.
@@ -31,7 +31,7 @@ order : 30
 액터의 트랜스폼에 모빌리티라는 프로퍼티가 있습니다.  
 이 모빌리티는 액터가 게임 플레이 중 어떤 방식으로 이동하거나 변경될 수 있는지 제어하는 세팅입니다.
 
-![MovableActor-SettingMobility]({{site.url}}/images/Unreal/ue5/2024-06-15-MovableActor/MovableActor-SettingMobility.PNG)
+![MovableActor-SettingMobility]({{site.url}}/images/Unreal/UE5Dev/2024-06-15-MovableActor/MovableActor-SettingMobility.PNG)
 
 우리는 액터가 게임 플레이중에 움직이고자하므로 트랜스폼을 갖는 컴포넌트를 무버블로 변경하겠습니다.
 
@@ -39,7 +39,7 @@ order : 30
 
 ## 액터 이동과 회전
 
-![MovableActor-LocationAndRotationFunction]({{site.url}}/images/Unreal/ue5/2024-06-15-MovableActor/MovableActor-LocationAndRotationFunction.PNG)
+![MovableActor-LocationAndRotationFunction]({{site.url}}/images/Unreal/UE5Dev/2024-06-15-MovableActor/MovableActor-LocationAndRotationFunction.PNG)
 
 `Target`핀에는 이동하거나 회전하려는 액터나 액터의 컴포넌트를 받습니다.
 `Location`혹은 `Rotation`핀에는 이동과 회전을 얼만큼 할지 값을 받습니다.
@@ -50,7 +50,7 @@ order : 30
 
 `Sweep`과 `Teleport`의 설명은 [물리적인 물체의 움직임 다루기!](https://www.unrealengine.com/ko/blog/moving-physical-objects)에서 좀 더 자세하게 알 수 있습니다.
 
-![MovableActor-ExampleSetLocationAndRotation]({{site.url}}/images/Unreal/ue5/2024-06-15-MovableActor/MovableActor-ExampleSetLocationAndRotation.PNG)
+![MovableActor-ExampleSetLocationAndRotation]({{site.url}}/images/Unreal/UE5Dev/2024-06-15-MovableActor/MovableActor-ExampleSetLocationAndRotation.PNG)
 
 
 액터의 이동과 회전을 동시에하는 것은 위의 사진과 같은 방법으로 할 수 있습니다.
