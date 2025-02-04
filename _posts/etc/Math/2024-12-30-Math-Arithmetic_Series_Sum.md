@@ -10,7 +10,7 @@ tag: [수학]
 date: 2024-12-30
 last_modified_at: 2024-12-30
 
-order : 10
+order : 1000
 ---
 
 # 등차수열
