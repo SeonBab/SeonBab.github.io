@@ -8,7 +8,7 @@ categories:
 tag: [Cpp]
 
 date: 2024-05-07
-last_modified_at: 2025-02-03
+last_modified_at: 2025-02-04
 
 order : 100000
 ---
@@ -17,6 +17,8 @@ order : 100000
 
 표준 템플릿 라이브러리(STL: Standard Template Libray)는 여러 자료 구조, 함수, 알고리즘 등을 사용하기 쉽게 정형화해서 라이브러리화 해둔 것입니다.  
 엄밀하게 말하면 이미 만들어진 템플릿을 이용하기 위해 불러와서 사용하는 것은 C++ Standard Library라고 부르는 것이 맞지만 STL이라고 불러왔기 때문에 굳혀져 지금도 STL이라고 부르고 있습니다.
+
+STL을 잘 사용하면 시간과 성능을 절약할 수 있습니다.
 
 ## 표준 라이브러리 구성
 
