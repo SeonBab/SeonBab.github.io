@@ -31,9 +31,7 @@ R : 실수 집합
 Q : 유리수 집합 (rational numbers)  
 I : 무리수 집합 (irrational numbers)
 
-## 실수의 성질
-
-### 연산 성질
+## 연산
 
 실수 집합 $\mathbb{R}$에서는 다음과 같은 연산이 가능합니다.
 
@@ -42,7 +40,7 @@ I : 무리수 집합 (irrational numbers)
 + 곱셈($\times$): $a \times b \in \mathbb{R}$
 + 나눗셈($\div$): $a \div b \in \mathbb{R}, \quad b \neq 0$
 
-### 순서 성질
+## 순서
 
 실수는 크기를 비교할 수 있는 완비 순서체(ordered field) 입니다.
 
@@ -50,7 +48,7 @@ $a < b$ 또는 $a > b$ 또는 $a = b$
 
 $a < b, b < c \Rightarrow a < c$ (전이성)
 
-### 연속성
+## 연속성
 
 실수는 완비성(Completeness)을 가집니다.  
 이는 실수의 중요한 성질 중 하나로, 어떤 실수 집합이 위로 유계라면, 그 집합의 상한(최소의 상한)이 실수 집합 안에 존재한다라는 성질입니다.  
