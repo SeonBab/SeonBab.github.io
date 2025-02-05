@@ -15,7 +15,7 @@ order : 500
 
 # 레드-블랙 트리
 
-레드-블랙 트리(Red-Black Tree)는 균형 이진 탐색 트리(Balanced Binary Search Tree)의 한 종류입니다.
+레드-블랙 트리(Red-Black Tree)는 자가 균형 이진 탐색 트리(self-balancing Binary Search Tree)의 한 종류입니다.
 
 삽입 및 삭제 연산 후에도 트리의 균형을 유지하는 특성을 가집니다.  
 탐색, 삽입, 삭제 연산이 평균 및 최악의 경우에도 $O(log N)$의 시간 복잡도를 가집니다.
