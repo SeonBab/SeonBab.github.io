@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "GitHub LFS 데이터 확인 방법"
+title: "[GitHub] LFS 데이터 확인 방법"
 
 categories:
     - GitHub
