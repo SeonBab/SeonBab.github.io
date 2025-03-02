@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "프로그래머스 JadenCase 문자열 만들기"
+title: "[프로그래머스][C++] JadenCase 문자열 만들기"
 
 categories:
     - Programmers
