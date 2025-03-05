@@ -8,7 +8,7 @@ categories:
 tag: [Cpp]
 
 date: 2025-02-18
-last_modified_at: 2025-02-18
+last_modified_at: 2025-03-05
 
 order : 200000
 ---
@@ -357,5 +357,94 @@ int main() {
     transform(v1.begin(), v1.end(), v2.begin(), v3.begin(), plus<int>());
 
     for (int x : v3) cout << x << " "; // 7 9 11 13 15
+}
+```
+
+## min_element & max_element & minmax_element
+
+주어진 범위에서 최소값, 최대값 또는 최소값과 최대값의 위치를 반환하는 함수입니다.
+
+```cpp
+// min_element & max_element
+template <class ForwardIt>
+ForwardIt min_element(ForwardIt first, ForwardIt last);
+template <class ForwardIt, class Compare>
+ForwardIt max_element(ForwardIt first, ForwardIt last, Compare comp);
+```
+
+`first`와 `last`는 연산을 수행할 범위의 시작과 끝을 나타내는 반복자입니다.  
+`UnaryPred`는 비교 함수로, 람다 함수 또한 사용될 수 있습니다.  
+반환값인 `ForwardIt`는 최소값 혹은 최대값을 가지는 `iterator`이며, 만약 찾지 못하는 경우 `end`에 해당하는 `iterator`를 반환합니다.
+
+예시 #1
+
+```cpp
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+    vector<int> v = {4, 1, 6, 3, 8, 2};
+
+    // max_element 최댓값의 위치를 찾아줍니다
+    auto max_it = max_element(v.begin(), v.end());
+    cout << *max_it << endl; // 8
+    
+    // min_element 최솟값의 위치를 찾아줍니다
+    auto min_it = min_element(v.begin(), v.end());
+    cout << *min_it << endl; // 1
+    
+    // minmax_element 최솟값과 최댓값의 위치를 찾아줍니다.
+    auto [min_iter, max_iter] = minmax_element(v.begin(), v.end());
+    cout << *max_iter << endl; // 8
+    cout << *min_iter << endl; // 1
+}
+```
+
+## count & count_if
+
+`count`함수는 특정 값을 가진 원소의 개수를 반환합니다.  
+`count_if`함수는 특정 조건을 만족하는 원소의 개수를 반환합니다.
+
+```cpp
+template <class InputIt, class T>
+typename std::iterator_traits<InputIt>::difference_type 
+count(InputIt first, InputIt last, const T& value);
+
+template <class InputIt, class UnaryPred>
+typename std::iterator_traits<InputIt>::difference_type 
+count_if(InputIt first, InputIt last, UnaryPred p);
+```
+
+`first`와 `last`는 연산을 수행할 범위의 시작과 끝을 나타내는 반복자입니다.  
+`value`는 개수를 세고자하는 값입니다.  
+`UnaryPred`는 비교 함수로, 람다 함수 또한 사용될 수 있습니다.  
+`std::iterator_traits<InputIt>::difference_type`는 반환 자료형으로 일반적으로 `int` 혹은 `long`타입입니다.
+
+예시 #1
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+    vector<int> v = { 1, 1, 2, 2, 3, 3, 4 };
+
+    // 값이 2인 원소 개수
+    int cnt = count(v.begin(), v.end(), 2);
+
+    // 짝수 원소 개수
+    int even_cnt = count_if(v.begin(), v.end(), [](int x) { return x % 2 == 0; });
+
+    cout << cnt << endl;    // 2
+    cout << even_cnt << endl;   // 3
 }
 ```
