@@ -28,7 +28,7 @@ order : 10
 ![Bubble_Sort-example]({{site.url}}/images/Algorithm/2025-03-05-Bubble_Sort/Bubble_Sort-example.gif)
 
 처음에는 $n - 1$번 비교하고, 다음은 $n - 2$번 비교하며, 마지막에는 1번 비교합니다.  
-따라서 비교 횟수는 $(n - 1) + (n - 2) + ... + 1 = n(n-1)/2$ 이므로, 시간 복잡도는 $O(n^2)$입니다.
+따라서 비교 횟수는 $(n - 1) + (n - 2) + ... + 1 = n(n-1)/2$ 이므로, 시간 복잡도는 최선 $\Omega(n)$, 평균 $\theta(n^2)$ 최악 $O(n^2)$입니다.
 
 구현이 간단하며, 추가적인 메모리 공간을 사용하지 않는 제자리 정렬(In-place sorting)입니다.
 
