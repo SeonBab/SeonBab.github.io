@@ -8,7 +8,7 @@ categories:
 tag: [알고리즘]
 
 date: 2025-03-08
-last_modified_at: 2025-03-08
+last_modified_at: 2025-03-10
 
 order : 30
 ---
@@ -22,6 +22,8 @@ order : 30
 2. 현재 원소보다 큰 원소들은 한 칸씩 뒤로 이동해 현재 원소가 들어갈 자리를 만들어줍니다.
 3. 만들어진 자리에 현재 원소가 삽입됩니다.
 4. 이 과정을 마지막 원소까지 반복합니다.
+
+![Insertion_sort-example]({{site.url}}/images/Algorithm/2025-03-08-Algorithm-Insertion_Sort/Insertion_sort-example.gif)
 
 시간 복잡도는 최선 $\Omega(n)$, 평균 $\theta(n^2)$ 최악 $O(n^2)$입니다.
 
