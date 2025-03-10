@@ -22,7 +22,7 @@ order : 20
 2. 주어진 배열을 끝까지 탐색해 두 번째로 가장 작은 값을 찾아 두 번째 요소와 교환합니다.
 3. 즉, 가장 작은 값을 찾아 특정 위치와 값을 교환합니다.
 
-![Selection_Sort-Animation]({{site.url}}/images/Algorithm/2025-03-07-Selection_Sort/Selection_Sort-Animation.gif){: width="80" height="80"}
+![Selection_Sort-Animation]({{site.url}}/images/Algorithm/2025-03-07-Algorithm-Selection_Sort/Selection_Sort-Animation.gif){: width="80" height="80"}
 
 추가적인 메모리 공간을 사용하지 않는 제자리 정렬(In-place sorting)입니다.  
 따라서 공간 복잡도는 $O(1)$입니다.
