@@ -25,7 +25,7 @@ order : 10
 4. 다시 처음부터 비교를 시작하지만, 정렬된 마지막 요소는 제외하고 비교합니다.
 5. 이 과정을 배열이 정렬될 때까지 반복합니다.
 
-![Bubble_Sort-example]({{site.url}}/images/Algorithm/2025-03-05-Bubble_Sort/Bubble_Sort-example.gif)
+![Bubble_Sort-example]({{site.url}}/images/Algorithm/2025-03-05-Algorithm-Bubble_Sort/Bubble_Sort-example.gif)
 
 처음에는 $n - 1$번 비교하고, 다음은 $n - 2$번 비교하며, 마지막에는 1번 비교합니다.  
 따라서 비교 횟수는 $(n - 1) + (n - 2) + ... + 1 = n(n-1)/2$ 이므로, 시간 복잡도는 최선 $\Omega(n)$, 평균 $\theta(n^2)$ 최악 $O(n^2)$입니다.
