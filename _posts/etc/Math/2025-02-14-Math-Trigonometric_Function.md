@@ -8,7 +8,7 @@ categories:
 tag: [수학]
 
 date: 2025-02-14
-last_modified_at: 2025-02-14
+last_modified_at: 2025-03-14
 
 order : 110
 ---
@@ -44,14 +44,14 @@ $\sin(A + B) = \sin A \cos B + \cos A \sin B$
 $sin$, $cos$의 공역: $[−1,1]$
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sine_cosine_plot.svg/800px-Sine_cosine_plot.svg.png)  
-<cite>이미지 출처 위키피디아</cite>
+<cite>Image from Wikimedia Commons</cite>
 {: .small}
 
 $tan$의 공역: $\mathbb{R}$  
 (단, 특정 값에서 정의되지 않음 $\theta = \frac{\pi}{2} + k\pi$)
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Tangent.svg/738px-Tangent.svg.png)  
-<cite>이미지 출처 위키피디아</cite>
+<cite>Image from Wikimedia Commons</cite>
 {: .small}
 
 ## 단위 원
