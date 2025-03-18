@@ -93,3 +93,110 @@ int main()
 	func(str, curStr, used);
 }
 ```
+
+---
+
+N-Queen을 구하는 방법
+
+```cpp
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+void printBoard(const vector<vector<int>>& board, int n)
+{
+    cout << "====" << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if (board[i][j] == 1)
+            {
+                cout << "Q ";
+            }
+            else
+            {
+                cout << ". ";
+            }
+        }
+
+        cout << endl;
+    }
+
+    cout << "====" << endl;
+}
+
+// 현재 행과 열에 배치 할 수 있는지 확인하는 함수
+// 한 행에 하나의 퀸만 배치하고 다음 행으로 이동하므로 검사할 필요가 없음
+// 좌하향 및 우하향 대각선은 퀸이 배치되지 않았으므로 검사할 필요가 없음
+bool canPlaceQueen(vector<vector<int>>& board, int row, int col, int n)
+{
+    // 같은 열 검사
+    for (int i = 0; i < row; ++i)
+    {
+        if (board[i][col] == 1)
+        {
+            return false;
+        }
+    }
+
+    // 좌상향 대각선 검사
+    for (int i = row, j = col; i >= 0 && j >= 0; --i, --j)
+    {
+        if (board[i][j] == 1)
+        {
+            return false;
+        }
+    }
+
+    // 우상향 대각선 검사
+    for (int i = row, j = col; i >= 0 && j < n; --i, ++j)
+    {
+        if (board[i][j] == 1)
+        {
+            return false;
+        }
+    }
+
+    // 현재 위치에 퀸 배치 가능
+    return true;
+}
+
+// 백트래킹을 이용해 N-Queen 해를 찾는 함수
+void solveNQueens(vector<vector<int>>& board, int row, int n)
+{
+    // n개의 퀸이 모두 배치된 경우 해를 출력
+    if (row == n)
+    {
+        printBoard(board, n);
+        return;
+    }
+
+    // 열 순회
+    // 현재 행에서 가능한 모든 열에 배치 시도
+    for (int col = 0; col < n; ++col)
+    {
+        // 현재 위치에 퀸을 배치 할 수 있는지 확인
+        if (canPlaceQueen(board, row, col, n))
+        {
+            board[row][col] = 1;    // 퀸 배치
+            solveNQueens(board, row + 1, n);    // 다음 행
+            board[row][col] = 0;    // 퀸 제거 후 다른 경우 탐색 (백트래킹)
+        }
+    }
+}
+
+// 사용 예시
+int main()
+{
+	int n;
+	std::cin >> n;
+
+    // 보드
+	vector<vector<int>> board(n, vector<int>(n, 0));
+
+    solveNQueens(board, 0, n);
+}
+```
