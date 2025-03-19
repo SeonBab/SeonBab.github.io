@@ -47,7 +47,7 @@ char형에선 1바이트, short형에선 2바이트, int와 float형에선 4바�
 
 예를 들어, int형 데이터는 4비트의 크기를 가지지만 데이터의 주소값은 1바이트를 가집니다.  
 
-![Address_int]({{site.url}}/images/cpp/cpp/2024-05-23-Pointer/Address_int.png)
+![Address_int]({{site.url}}/images/cpp/cpp/2024-05-23-CPP-Pointer/Address_int.png)
 
 ## 포인터 변수 선언
 
@@ -156,11 +156,11 @@ char b;
 간접 참조 연산자는 포인터의 이름이나 주소 앞에 사용하여, 포인터에 저장된 주소를 접근해 저장되어 있는 값을 반환합니다.  
 이때 포인터 변수가 피연산자로 쓰입니다.
 
-![Pointer_IndirectionOperator]({{site.url}}/images/cpp/cpp/2024-05-23-Pointer/Pointer_IndirectionOperator.png)
+![Pointer_IndirectionOperator]({{site.url}}/images/cpp/cpp/2024-05-23-CPP-Pointer/Pointer_IndirectionOperator.png)
 
 포인터 변수의 메모리 주소에 접근해 저장된 값을 변경하는것도 가능합니다.  
 
-![Pointer_IndirectionOperator]({{site.url}}/images/cpp/cpp/2024-05-23-Pointer/Pointer_IndirectionOperator.png)
+![Pointer_IndirectionOperator]({{site.url}}/images/cpp/cpp/2024-05-23-CPP-Pointer/Pointer_IndirectionOperator.png)
 
 `*`연산자는 단항 연산자로 괄호 다음으로 높은 우선순위를 가져 다른 연산자보다 먼저 실행됩니다.
 
@@ -183,7 +183,7 @@ char b;
 예를 들어 int형 포인터의 증가폭은 int형 타입의 크기인 4바이트만큼 증가하게 됩니다.  
 이 법칙은 포인터의 뺄셈도 같습니다.
 
-![Pointer_ArithmeticOperator]({{site.url}}/images/cpp/cpp/2024-05-23-Pointer/Pointer_ArithmeticOperator.png)
+![Pointer_ArithmeticOperator]({{site.url}}/images/cpp/cpp/2024-05-23-CPP-Pointer/Pointer_ArithmeticOperator.png)
 
 만약 `int`배열을 `double`포인터에 주소를 저장한다면 메모리를 제대로 접근하지 못 할 수 있습니다.  
 예시는 다음과 같습니다.
@@ -223,7 +223,7 @@ arr[n] == *(arr + n);
 
 포인터를 배열의 이름처럼 사용하는 예시는 다음과 같습니다.
 
-![Pointer_Array]({{site.url}}/images/cpp/cpp/2024-05-23-Pointer/Pointer_Array.png)
+![Pointer_Array]({{site.url}}/images/cpp/cpp/2024-05-23-CPP-Pointer/Pointer_Array.png)
 
 포인터를 배열의 이름처럼 사용했을 때와 배열의 인덱스를 각각 접근했을 때 같은 값이 출력 됩니다.  
 그 이유는 같은 메모리에 접근하고, 같은 자료형으로 해석하기 때문입니다.
@@ -235,7 +235,7 @@ arr[n] == *(arr + n);
 
 가장 먼저 변수에 `const`키워드를 사용한 경우입니다.
 
-![Pointer_ConstVariable]({{site.url}}/images/cpp/cpp/2024-05-23-Pointer/Pointer_ConstVariable.png)
+![Pointer_ConstVariable]({{site.url}}/images/cpp/cpp/2024-05-23-CPP-Pointer/Pointer_ConstVariable.png)
 
 포인터를 지정하려고 하면 Compile Error가 발생합니다.  
 이유는 `*ptr = 7`이런 식으로 값을 변경할 수 있어 상수라는 개념에 위반돼 이런 포인터는 허용되지 않습니다.
@@ -247,7 +247,7 @@ arr[n] == *(arr + n);
 
 다음은 예시입니다.
 
-![Pointer_ConstType]({{site.url}}/images/cpp/cpp/2024-05-23-Pointer/Pointer_ConstType.png)
+![Pointer_ConstType]({{site.url}}/images/cpp/cpp/2024-05-23-CPP-Pointer/Pointer_ConstType.png)
 
 
 포인터의 자료형 뒤에 `const` 키워드가 사용됐을 경우입니다.  

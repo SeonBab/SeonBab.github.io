@@ -17,7 +17,7 @@ order : 270
 
 C++의 메모리 구조는 크게 4가지 영역으로 나눌 수 있습니다.
 
-![MemoryLoayout-MemoryLoayout]({{site.url}}/images/cpp/cpp/2024-12-30-MemoryLayout/MemoryLoayout-MemoryLoayout.PNG)
+![MemoryLoayout-MemoryLoayout]({{site.url}}/images/cpp/cpp/2024-12-30-CPP-MemoryLayout/MemoryLoayout-MemoryLoayout.PNG)
 
 각 영역은 서로 다른 용도와 메모리 관리 방식을 가집니다.  
 효율적인 메모리 사용과 성능 최적화에 매우 중요하므로 이해할 필요가 있습니다.

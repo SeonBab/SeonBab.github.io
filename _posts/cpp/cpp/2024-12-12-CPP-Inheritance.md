@@ -95,7 +95,7 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Inheritance-Call]({{site.url}}/images/cpp/cpp/2024-12-12-Inheritance/Inheritance-Call.PNG)
+![Inheritance-Call]({{site.url}}/images/cpp/cpp/2024-12-12-CPP-Inheritance/Inheritance-Call.PNG)
 
 `Dog`클래스에서는 생성자를 제외한 아무런 기능을 가지고 있지 않지만 `Animal`클래스를 상속받아 멤버 변수와 함수를 사용하는 것을 알 수 있습니다.
 

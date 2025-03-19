@@ -57,7 +57,7 @@ ANSI를 한글에 맞게 확장한 것입니다.
 
 아래의 이미지는 EUC-KR 문자열 표입니다.
 
-![EUC-KR_CharacterCodeTable]({{site.url}}/images/cpp/cpp/2024-04-30-CharacterNotation/EUC-KR_CharacterCodeTable.png){: width="50%" height="50%"}
+![EUC-KR_CharacterCodeTable]({{site.url}}/images/cpp/cpp/2024-04-30-CPP-CharacterNotation/EUC-KR_CharacterCodeTable.png){: width="50%" height="50%"}
 
 한글 `가`는 `b0 a 1`로 대응됩니다.  
 

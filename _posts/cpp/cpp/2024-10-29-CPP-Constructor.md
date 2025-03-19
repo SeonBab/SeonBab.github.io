@@ -68,7 +68,7 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Constructor-CallOrder]({{site.url}}/images/cpp/cpp/2024-10-29-Constructor/Constructor-CallOrder.PNG)
+![Constructor-CallOrder]({{site.url}}/images/cpp/cpp/2024-10-29-CPP-Constructor/Constructor-CallOrder.PNG)
 
 위와 같이 상속 관계에서 `Animal`클래스의 생성자가 먼저 호출되고 `Dog`클래스의 생성자가 호출된다는 것을 알 수 있습니다.
 
@@ -119,7 +119,7 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Constructor-DefaultConstructor]({{site.url}}/images/cpp/cpp/2024-10-29-Constructor/Constructor-DefaultConstructor.PNG)
+![Constructor-DefaultConstructor]({{site.url}}/images/cpp/cpp/2024-10-29-CPP-Constructor/Constructor-DefaultConstructor.PNG)
 
 `MyDog`라는 인스턴스가 생성되면서 기본 생성자가 호출됩니다.  
 그 후 생성자에서 각 변수에 값이 할당됩니다.
@@ -173,7 +173,7 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Constructor-ParameterizedConstructor]({{site.url}}/images/cpp/cpp/2024-10-29-Constructor/Constructor-ParameterizedConstructor.PNG)
+![Constructor-ParameterizedConstructor]({{site.url}}/images/cpp/cpp/2024-10-29-CPP-Constructor/Constructor-ParameterizedConstructor.PNG)
 
 `MyDog`라는 인스턴스가 생성되면서 생성자를 호출해야하는데, 매개변수 2개를 가진 함수를 호출하므로 매개 변수를 받는 생성자를 호출합니다.  
 그 후 생성자에서 각 변수에 값이 할당된 것을 알 수 있습니다.
@@ -243,7 +243,7 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Constructor-ConstructorMemberInitializerList]({{site.url}}/images/cpp/cpp/2024-10-29-Constructor/Constructor-ConstructorMemberInitializerList.PNG)
+![Constructor-ConstructorMemberInitializerList]({{site.url}}/images/cpp/cpp/2024-10-29-CPP-Constructor/Constructor-ConstructorMemberInitializerList.PNG)
 
 `ADog`라는 인스턴스가 생성되면서 매개 변수가 없으므로 기본 생성자를 호출합니다.  
 `BDog`라는 인스턴스가 생성되면서 매개 변수를 2개 넘기므로 매개 변수를 받는 생성자를 호출합니다.  
@@ -297,7 +297,7 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Constructor-ConstructorDelegation]({{site.url}}/images/cpp/cpp/2024-10-29-Constructor/Constructor-ConstructorDelegation.PNG)
+![Constructor-ConstructorDelegation]({{site.url}}/images/cpp/cpp/2024-10-29-CPP-Constructor/Constructor-ConstructorDelegation.PNG)
 
 `ADog`라는 인스턴스가 생성되기 위해 생성자를 호출하는데, 매개 변수가 없으므로 기본 생성자를 호출합니다.  
 이때 기본 생성자에서 생성자 위임을 했기 때문에 매개 변수를 받는 생성자를 호출합니다.  
@@ -363,7 +363,7 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Constructor-CopyConstructorShallowCopy]({{site.url}}/images/cpp/cpp/2024-10-29-Constructor/Constructor-CopyConstructorShallowCopy.PNG)
+![Constructor-CopyConstructorShallowCopy]({{site.url}}/images/cpp/cpp/2024-10-29-CPP-Constructor/Constructor-CopyConstructorShallowCopy.PNG)
 
 `BDog`라는 인스턴스가 생성되기 위해 생성자를 호출하는데, 이때 복사 생성자를 호출합니다.  
 복사 생성자에서 `int* Age`의 할당을 얕은 복사로 했기 때문에 `ADog`의 멤버 변수에 값을 가리키는 포인터(주소 값)를 복사합니다.  
@@ -383,7 +383,7 @@ int main()
 
 예시의 함수를 사용한 출력은 다음과 같습니다.
 
-![Constructor-CopyConstructorDeepCopy]({{site.url}}/images/cpp/cpp/2024-10-29-Constructor/Constructor-CopyConstructorDeepCopy.PNG)
+![Constructor-CopyConstructorDeepCopy]({{site.url}}/images/cpp/cpp/2024-10-29-CPP-Constructor/Constructor-CopyConstructorDeepCopy.PNG)
 
 깊은 복사가 수행되어 출력에서 변수의 주소가 다른 것을 알 수 있습니다.
 
@@ -469,7 +469,7 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Constructor-MoveConstructor]({{site.url}}/images/cpp/cpp/2024-10-29-Constructor/Constructor-MoveConstructor.PNG)
+![Constructor-MoveConstructor]({{site.url}}/images/cpp/cpp/2024-10-29-CPP-Constructor/Constructor-MoveConstructor.PNG)
 
 `BDog`라는 인스턴스를 `ADog`라는 인스턴스를 이용해 이동 생성자를 호출합니다.  
 이때 `std::move()`는 이동을 시켜주는 것이 아닌 객체를 RValue로 변환해주는 역할을 합니다.

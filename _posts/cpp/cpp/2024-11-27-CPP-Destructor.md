@@ -59,7 +59,7 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Destructor-Call]({{site.url}}/images/cpp/cpp/2024-11-27-Destructor/Destructor-Call.PNG)
+![Destructor-Call]({{site.url}}/images/cpp/cpp/2024-11-27-CPP-Destructor/Destructor-Call.PNG)
 
 `Dog`클래스의 소멸자가 정상적으로 호출된 것을 알 수 있습니다.
 
@@ -103,7 +103,7 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Destructor-CallOrderProblematicIssue]({{site.url}}/images/cpp/cpp/2024-11-27-Destructor/Destructor-CallOrderProblematicIssue.PNG)
+![Destructor-CallOrderProblematicIssue]({{site.url}}/images/cpp/cpp/2024-11-27-CPP-Destructor/Destructor-CallOrderProblematicIssue.PNG)
 
 출력을 보면 `Dog`클래스의 소멸자는 호출되지 않았고, `Animal`클래스의 소멸자만 호출된 것을 알 수 있습니다.
 
@@ -140,7 +140,7 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Destructor-CallOrderProblemSolving]({{site.url}}/images/cpp/cpp/2024-11-27-Destructor/Destructor-CallOrderProblemSolving.PNG)
+![Destructor-CallOrderProblemSolving]({{site.url}}/images/cpp/cpp/2024-11-27-CPP-Destructor/Destructor-CallOrderProblemSolving.PNG)
 
 출력을 보면 소멸자가 정상적으로 호출된 것을 알 수 있습니다.
 
@@ -188,6 +188,6 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Destructor-CallOrder]({{site.url}}/images/cpp/cpp/2024-11-27-Destructor/Destructor-CallOrder.PNG)
+![Destructor-CallOrder]({{site.url}}/images/cpp/cpp/2024-11-27-CPP-Destructor/Destructor-CallOrder.PNG)
 
 출력을 보면 위에서 설명한 바와 같이 자식 클래스의 소멸자가 먼저 호출되고, 부모 클래스의 소멸자가 호출된다는 것을 알 수 있습니다.

@@ -67,7 +67,7 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Virtual-Prablem]({{site.url}}/images/cpp/cpp/2024-12-23-Virtual/Virtual-Prablem.PNG)
+![Virtual-Prablem]({{site.url}}/images/cpp/cpp/2024-12-23-CPP-Virtual/Virtual-Prablem.PNG)
 
 이 예제를 보면 각 타입에 각 객체의 주소를 넣고 함수를 호출 시키면 각 클래스에서 정의된 `Print`함수를 호출합니다.  
 하지만 `pPointer`에 `cPointer`의 주소를 넣고 똑같이 함수를 호출하면, `cPointer`의 `Print`함수가 아닌 `pPointer`의 함수가 호출되는 것을 알 수 있습니다.
@@ -120,7 +120,7 @@ int main()
 
 출력은 다음과 같습니다.
 
-![Virtual-VirtualFunctionCall]({{site.url}}/images/cpp/cpp/2024-12-23-Virtual/Virtual-VirtualFunctionCall.PNG)
+![Virtual-VirtualFunctionCall]({{site.url}}/images/cpp/cpp/2024-12-23-CPP-Virtual/Virtual-VirtualFunctionCall.PNG)
 
 사용하는 이유의 코드와 똑같지만 함수 앞에 `virtual`키워드를 사용해 가상함수로 만들어 주었습니다.
 
@@ -133,7 +133,7 @@ int main()
 이 키워드를 사용할 경우 컴파일러가 오버라이딩이 가능한 함수인지, 함수 이름과 매개 변수등이 잘 맞는지 등을 확인해줍니다.  
 만약 재정의 하지 않는다면 오류를 띄워줍니다.
 
-![Virtual-OverrideError]({{site.url}}/images/cpp/cpp/2024-12-23-Virtual/Virtual-OverrideError.PNG)
+![Virtual-OverrideError]({{site.url}}/images/cpp/cpp/2024-12-23-CPP-Virtual/Virtual-OverrideError.PNG)
 
 # 순수 가상 함수
 
