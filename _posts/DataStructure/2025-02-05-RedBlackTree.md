@@ -10,7 +10,7 @@ tag: [Cpp, 자료구조]
 date: 2025-02-05
 last_modified_at: 2025-02-05
 
-order : 500
+order : 550
 ---
 
 # 레드-블랙 트리
