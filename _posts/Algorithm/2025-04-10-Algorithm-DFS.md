@@ -8,7 +8,7 @@ categories:
 tag: [알고리즘]
 
 date: 2025-04-10
-last_modified_at: 2025-04-10
+last_modified_at: 2025-04-21
 
 order : 2000
 ---
@@ -18,7 +18,7 @@ order : 2000
 깊이 우선 탐색(Depth First Search, DFS)는 트리나 그래프를 최대한 깊은 노드를 먼저 탐색하고, 더 이상 갈 곳이 없을 때 되돌아오면서 다른 경로를 찾아 탐색하는 방법입니다.  
 즉, 아래의 그림처럼 한 경로를 끝까지 탐색한 후에 되돌아와 다른 경로로 이동합니다.
 
-![Depth-First-Search_DFS]({{site.url}}/images/Algorithm/2025-04-10-DFS/Depth-First-Search_DFS.gif)  
+![Depth-First-Search_DFS]({{site.url}}/images/Algorithm/2025-04-10-Algorithm-DFS/Depth-First-Search_DFS.gif)  
 <cite>이미지 제작자: Mre, [출처](https://commons.wikimedia.org/wiki/File:Depth-First-Search.gif){: target="_blank"}, CC BY 3.0</cite>
 {: .small}
 
