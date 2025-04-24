@@ -8,7 +8,7 @@ categories:
 tag: [UE5, UE5Dev]
 
 date: 2025-04-23
-last_modified_at: 2025-04-23
+last_modified_at: 2025-04-24
 
 order : 200050
 ---
@@ -73,6 +73,7 @@ bool bAllowPartialPath = true // 완전한 경로를 찾지 못할 경우 부분
 
 ![AI_Pathfinding-Nav_Modifier_Volume_Long]({{site.url}}/images/Unreal/UE5Dev/2025-04-23-AI_Pathfinding/AI_Pathfinding-Nav_Modifier_Volume_Long.PNG)
 
-결과적으로는, 거리가 멀어져도 불륨이 배치되어있는 위치는 지나가지 않은 상태에서의 최단 경로로 이동했습니다.
+결과적으로는, 거리가 멀어져도 불륨이 배치되어있는 위치는 지나가지 않은 상태에서의 최단 경로로 이동했습니다.  
+이미지의 경로보다 훨씬 더 거리가 멀어지고 크게 돌아가야하는 경우를 테스트해보았는데, 똑같이 크게 돌아가는 최단 경로가 나왔습니다.
 
 만약, 돌아갈 수 있는 위치가 없이 무조건 불륨을 지나가야하는 경우에는 기존의 최단 경로로 이동했습니다.
