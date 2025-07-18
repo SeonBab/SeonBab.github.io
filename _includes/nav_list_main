@@ -113,8 +113,7 @@
                 </ul>
             </li>
         </ul>
-
-        <a href="https://hits.seeyoufarm.com">
+        <a href="https://myhits.vercel.app">
             <style>
                 .hits {
                     width: auto; height:auto;
@@ -122,7 +121,7 @@
                     max-height: 40px;
                 }
             </style>
-            <img class="hits" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fseonbab.github.io&count_bg=%23000000&title_bg=%233A3A3A&icon=&icon_color=%23000000&title=%EB%B0%A9%EB%AC%B8%EC%9E%90&edge_flat=false"/>            
+            <img class="hits" src="https://myhits.vercel.app/api/hit/https%3A%2F%2Fseonbab.github.io%2F?color=green&label= 방문자 수 &size=small" alt=" 방문자 수 " /></a>
         </a>
     </ul>
 </nav>
