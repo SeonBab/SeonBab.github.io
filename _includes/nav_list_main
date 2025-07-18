@@ -92,6 +92,13 @@
             <span class="nav__sub-title">ETC</span>
                 <ul>
                     {% for category in site.categories %}
+                        {% if category[0] == "ComputerScience" %}
+                            <li><a href="/categories/ComputerScience" class="">컴퓨터 과학 ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for category in site.categories %}
                         {% if category[0] == "DesignPattern" %}
                             <li><a href="/categories/designpattern" class="">디자인 패턴 ({{category[1].size}})</a></li>
                         {% endif %}
