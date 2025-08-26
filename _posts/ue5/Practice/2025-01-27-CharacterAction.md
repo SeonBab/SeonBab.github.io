@@ -4,8 +4,8 @@ layout: single
 title: "[UE5] 캐릭터 이동, 점프, 마우스 시점 회전, 달리기 구현"
 
 categories:
-    - UE5Dev
-tag: [UE5, UE5Dev]
+    - UEPractice
+tag: [UE5, UEPractice]
 
 date: 2025-01-27
 last_modified_at: 2025-02-03

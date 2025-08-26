@@ -4,8 +4,8 @@ layout: single
 title: "[UE5] 왕복으로 이동하는 액터 구현"
 
 categories:
-    - UE5Dev
-tag: [UE5, UE5Dev]
+    - UEPractice
+tag: [UE5, UEPractice]
 
 date: 2025-01-28
 last_modified_at: 2025-01-28

@@ -4,8 +4,8 @@ layout: single
 title: "[UE5] AI 이동 명령 및 Nav Modifier Volume로 경로 바꾸기"
 
 categories:
-    - UE5Dev
-tag: [UE5, UE5Dev]
+    - UEPractice
+tag: [UE5, UEPractice]
 
 date: 2025-04-23
 last_modified_at: 2025-04-24
@@ -51,17 +51,17 @@ bool bAllowPartialPath = true // 완전한 경로를 찾지 못할 경우 부분
 
 우선 Place Actors(액터 배치) `패널에서 Nav Modifier Volume`을 검색해서 배치하거나, 이미지처럼 `Nav Modifier Volume`을 찾아 배치할 수 있습니다.
 
-![AI_Pathfinding-Nav_Modifier_Volume_Place]({{site.url}}/images/Unreal/UE5Dev/2025-04-23-AI_Pathfinding/AI_Pathfinding-Nav_Modifier_Volume_Place.PNG)
+![AI_Pathfinding-Nav_Modifier_Volume_Place]({{site.url}}/images/Unreal/UEPractice/2025-04-23-AI_Pathfinding/AI_Pathfinding-Nav_Modifier_Volume_Place.PNG)
 
 `Nav Modifier Volume`의 `Details` 내에 `Area Class`라는 프로퍼티를 찾아 클래스를 `NavArea_Obstacle`로 설정해 해당 불륨의 영역은 이동 비용을 주변 대비 높게 설정해줍니다.  
 올바른 클래스를 선택했다면, 이동 비용이 높아졌다는 의미에서 영역이 주황색으로 나타납니다.
 
-![AI_Pathfinding-Nav_Modifier_Volume_Area_Class]({{site.url}}/images/Unreal/UE5Dev/2025-04-23-AI_Pathfinding/AI_Pathfinding-Nav_Modifier_Volume_Area_Class.PNG)
+![AI_Pathfinding-Nav_Modifier_Volume_Area_Class]({{site.url}}/images/Unreal/UEPractice/2025-04-23-AI_Pathfinding/AI_Pathfinding-Nav_Modifier_Volume_Area_Class.PNG)
 
 저는 `MoveToLocation`함수를 사용하고, `Target Pointer`를 사용해 두 지점을 설정한 뒤 C++에서 해당 지점을 찾아 번갈아가며 이동할 수 있도록 구현했습니다.  
 결과적으로 `Nav Modifier Volume`과 `Target Pointer`를 배치한 모습은 다음과 같습니다.
 
-![AI_Pathfinding-Nav_Modifier_Volume_Target_Pointer]({{site.url}}/images/Unreal/UE5Dev/2025-04-23-AI_Pathfinding/AI_Pathfinding-Nav_Modifier_Volume_Target_Pointer.PNG)
+![AI_Pathfinding-Nav_Modifier_Volume_Target_Pointer]({{site.url}}/images/Unreal/UEPractice/2025-04-23-AI_Pathfinding/AI_Pathfinding-Nav_Modifier_Volume_Target_Pointer.PNG)
 
 다음 유튜브 영상은 `Nav_Modifier_Volume`을 사용하기 전과 후를 비교한 영상입니다.
 
@@ -71,7 +71,7 @@ bool bAllowPartialPath = true // 완전한 경로를 찾지 못할 경우 부분
 
 만약, 현재 상태에서 `Nav_Modifier_Volume`와 맵의 길이를 늘려 AI가 훨씬 더 먼 거리를 돌아가야한다면, 높은 비용을 뚫고 갈지 궁금해져 테스트해보았습니다.
 
-![AI_Pathfinding-Nav_Modifier_Volume_Long]({{site.url}}/images/Unreal/UE5Dev/2025-04-23-AI_Pathfinding/AI_Pathfinding-Nav_Modifier_Volume_Long.PNG)
+![AI_Pathfinding-Nav_Modifier_Volume_Long]({{site.url}}/images/Unreal/UEPractice/2025-04-23-AI_Pathfinding/AI_Pathfinding-Nav_Modifier_Volume_Long.PNG)
 
 결과적으로는, 거리가 멀어져도 불륨이 배치되어있는 위치는 지나가지 않은 상태에서의 최단 경로로 이동했습니다.  
 이미지의 경로보다 훨씬 더 거리가 멀어지고 크게 돌아가야하는 경우를 테스트해보았는데, 똑같이 크게 돌아가는 최단 경로가 나왔습니다.

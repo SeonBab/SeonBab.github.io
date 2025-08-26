@@ -54,8 +54,8 @@
                 </ul>
                 <ul>
                     {% for category in site.categories %}
-                        {% if category[0] == "UE5Dev" %}
-                            <li><a href="/categories/UE5Dev" class="">언리얼 엔진5 개발 ({{category[1].size}})</a></li>
+                        {% if category[0] == "UEPractice" %}
+                            <li><a href="/categories/UEPractice" class="">언리얼 엔진5 개발 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
