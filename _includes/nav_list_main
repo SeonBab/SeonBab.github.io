@@ -62,7 +62,7 @@
             <span class="nav__sub-title">Unity</span>
                 <ul>
                     {% for category in site.categories %}
-                        {% if category[0] == "Unity" %}
+                        {% if category[0] == "Unity6" %}
                             <li><a href="/categories/Unity6" class="">유니티6 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
