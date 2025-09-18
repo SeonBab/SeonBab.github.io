@@ -139,8 +139,8 @@
             <style>
                 .hits {
                     width: auto; height:auto;
-                    max-width: 80px;
-                    max-height: 40px;
+                    max-width: 100px;
+                    max-height: 60px;
                 }
             </style>
             <img class="hits" src="https://myhits.vercel.app/api/hit/https%3A%2F%2Fseonbab.github.io%2F?color=green&label= 방문자 수 &size=small" alt=" 방문자 수 " /></a>
