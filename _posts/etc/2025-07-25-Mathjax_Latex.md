@@ -229,11 +229,11 @@ $\scriptscriptstyle a_1, b^2$ `\scriptscriptstyle a_1, b^2` : 스크립트스크
 
 <table>
   <tr>
-    <td> $\infty$ </td> <td> \infty </td>
     <td> $\sin$ </td> <td> \sin </td>
     <td> $\cos$ </td> <td> \cos </td>
     <td> $\bar{x}$ </td> <td> \bar{x} </td>
     <td> $\overline{x}$ </td> <td> \overline{x} </td>
+    <td> $\sqrt{x}$ </td> <td> \sqrt{x} </td>
   </tr>
   <tr>
     <td> $\frac {2x}{5y}$ </td> <td> \frac {2x}{5y} </td>
@@ -336,7 +336,7 @@ $\scriptscriptstyle a_1, b^2$ `\scriptscriptstyle a_1, b^2` : 스크립트스크
   <tr>
     <td> $\bot$ </td> <td> \bot </td>
     <td> $\top$ </td> <td> \top </td>
-    <td>  </td> <td>  </td>
+    <td> $\infty$ </td> <td> \infty </td>
     <td>  </td> <td>  </td>
     <td>  </td> <td>  </td>
   </tr>
