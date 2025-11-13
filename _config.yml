@@ -303,5 +303,10 @@ defaults:
       toc_label: 목차
       toc_icon: "fa-solid fa-sitemap"
       use_math: true
+  - scope:
+      path: "_posts/TIL" # 제외할 폴더 경로
+      type: "posts"           # 이 설정이 'posts'에 적용됨을 명시 (선택 사항이지만 권장)
+    values:
+      sitemap: false          # 사이트맵에서 제외
 
 date_format: "%Y-%m-%d"
