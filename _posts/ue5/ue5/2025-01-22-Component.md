@@ -8,7 +8,7 @@ categories:
 tag: [Unreal Engine, UE5]
 
 date: 2025-01-22
-last_modified_at: 2025-01-22
+last_modified_at: 2026-01-14
 
 order : 250
 ---
@@ -18,13 +18,17 @@ order : 250
 컴포넌트(Component)란 언리얼 엔진에서 Actor가 어떤 역할을 하거나 특정 속성을 갖도록 만들어주는 부품의 개념입니다.  
 하나의 액터에서 여러 종류의 컴포넌트를 조합해 다양한 기능을 구현 할 수 있습니다.
 
-예를 들어 `Static Mesh Component` + `Audio Component` + `Collision Component`를 모두 사용해, 충돌 시 소리가 나는 아이템을 만들 수 있습니다.
+예를 들어 `StaticMeshComponent` + `AudioComponent` + `CollisionComponent`를 사용해, 충돌 시 소리가 나는 아이템을 만들 수 있습니다.
 
-모든 액터는 최상위 컴포넌트인 루트 컴포넌트(Root Component)를 가져야 합니다.
-
+액터는 일반적으로 최상위 컴포넌트인 루트 컴포넌트(Root Component)를 가집니다.  
 루트 컴포넌트는 액터의 트랜스폼을 정의하며, 모든 하위 컴포넌트가 이를 기준으로 동작합니다.
 
-일반적으로 `Scene Component`를 루트로 설정하여 액터의 트랜스폼을 관리하고, 이에 속하도록 다양한 컴포넌트를 계층적으로 붙입니다.
+일반적으로 `Scene Component` 계열을 루트로 설정하여 액터의 트랜스폼을 관리하고, 이에 속하도록 다양한 컴포넌트를 계층적으로 붙입니다.
+
+컴포넌트는 언리얼 오브젝트이기 때문에 C++로 작업할 때는 일반적으로 `UPROPERTY`를 사용해 관리하며, `TObjectPtr`로 포인터를 선언합니다.
+
+CDO에서 생성한 컴포넌트는 액터가 스폰될 때 자동으로 월드에 생성과 등록이되며, `NewObject`로 생성한 컴포넌트는 `RegisterComponent`와 같은 함수로 반드시 등록 절차를 거쳐야 합니다.  
+이렇게 등록된 컴포넌트는 월드의 기능을 사용할 수 있으며, 물리와 렌더링 처리에 합류됩니다.
 
 ## Scene Component
 
