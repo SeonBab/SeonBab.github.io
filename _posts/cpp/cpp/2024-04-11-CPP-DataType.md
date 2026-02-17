@@ -106,6 +106,7 @@ order : 1
 
 사용자 정의 자료형(User-Defined Types)은 용어 그대로 개발자가 직접 자료형을 선언하고 정의하여 사용하는 자료형입니다.
 
-사용자 정의 자료형은 enum, enum class, struct, union, class 그리고 자료형의 별칭을 지정하는 typedef와 using이 있다. C++11부터는 typedef를 using으로 사용하기를 권장합니다.
+사용자 정의 자료형은 enum, enum class, struct, union, class 그리고 자료형의 별칭을 지정하는 typedef와 using이 있습니다.  
+C++11부터는 typedef를 using으로 사용하기를 권장합니다.
 
 C++에서 struct와 class는 동일하게 취급하지만 C 스타일 struct를 지원하는 기능을 유지하고 있어 다른 부분이 있습니다.
