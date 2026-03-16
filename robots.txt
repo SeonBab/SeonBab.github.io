@@ -1,4 +1,4 @@
-Sitemap: https://Seonbab.github.io/sitemap.xml
+Sitemap: https://seonbab.github.io/sitemap.xml
 User-agent: *
 Allow: /
 
