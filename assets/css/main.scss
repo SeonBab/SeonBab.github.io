@@ -7,3 +7,14 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Minimal Mistakes의 기본 x-large breakpoint가 1280px이므로,
+// 이 구간부터는 사이드바 폭은 유지하고 나머지 레이아웃은 화면의 약 90%를 사용하도록 한다.
+@media (min-width: 1280px) {
+  #main,
+  .masthead__inner-wrap,
+  .footer footer,
+  .breadcrumbs {
+    max-width: 90%;
+  }
+}
