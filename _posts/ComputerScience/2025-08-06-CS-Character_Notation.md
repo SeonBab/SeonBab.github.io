@@ -37,6 +37,10 @@ order : 30
 
 대표적인 인코딩으로 `UTF-8`, `UTF-16`, `EUC-KR`, `CP949`등이 있습니다.
 
+다음 사이트에서 다양한 인코딩과 디코딩을 경험해볼 수 있습니다.  
+[DenCode](https://dencode.com/ko/){: target="_blank"}
+
+
 ## 디코딩
 
 디코딩(Decoding)은 바이트 데이터를 다시 문자로 해석하는 과정입니다.
