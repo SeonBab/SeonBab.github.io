@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-09-19
 last_modified_at: 2025-09-19
 
-order : 1220
+order : 3060
 ---
 
 # 가상 메모리

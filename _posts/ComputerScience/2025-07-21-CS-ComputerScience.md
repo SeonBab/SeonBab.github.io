@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-07-21
 last_modified_at: 2026-01-15
 
-order : 1
+order : 10
 ---
 
 # 컴퓨터 과학이란

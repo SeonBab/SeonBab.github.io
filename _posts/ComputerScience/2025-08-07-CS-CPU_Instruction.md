@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-08-07
 last_modified_at: 2025-08-07
 
-order : 1110
+order : 2020
 ---
 
 # CPU 명령어

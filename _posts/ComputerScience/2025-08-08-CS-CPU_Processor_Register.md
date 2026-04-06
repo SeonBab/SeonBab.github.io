@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-08-08
 last_modified_at: 2025-08-08
 
-order : 1115
+order : 2030
 ---
 
 # CPU 레지스터

@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-09-12
 last_modified_at: 2025-09-12
 
-order : 5010
+order : 3010
 ---
 
 # 프로세스와 스레드

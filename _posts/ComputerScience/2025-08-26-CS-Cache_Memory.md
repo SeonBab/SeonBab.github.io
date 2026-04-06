@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-08-26
 last_modified_at: 2025-08-26
 
-order : 1210
+order : 2110
 ---
 
 # 캐시 메모리

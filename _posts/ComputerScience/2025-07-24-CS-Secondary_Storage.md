@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-07-24
 last_modified_at: 2026-04-06
 
-order : 1300
+order : 2130
 ---
 
 # 보조기억장치

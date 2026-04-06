@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-07-24
 last_modified_at: 2025-07-24
 
-order : 1010
+order : 2120
 ---
 
 # 저장장치 계층 구조

@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-08-06
 last_modified_at: 2026-04-05
 
-order : 30
+order : 140
 ---
 
 # 문자의 내부 표현

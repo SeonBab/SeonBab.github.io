@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-09-28
 last_modified_at: 2025-09-28
 
-order : 5310
+order : 4030
 ---
 
 # 블록과 할당 방식

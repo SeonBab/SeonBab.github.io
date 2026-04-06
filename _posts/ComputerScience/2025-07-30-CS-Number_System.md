@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-07-30
 last_modified_at: 2025-07-30
 
-order : 15
+order : 110
 ---
 
 # 컴퓨터에서의 진법

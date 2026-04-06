@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-08-03
 last_modified_at: 2025-08-03
 
-order : 25
+order : 130
 ---
 
 # 실수의 내부 표현

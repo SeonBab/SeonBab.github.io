@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-09-16
 last_modified_at: 2025-09-16
 
-order : 5100
+order : 3030
 ---
 
 # 동기화
