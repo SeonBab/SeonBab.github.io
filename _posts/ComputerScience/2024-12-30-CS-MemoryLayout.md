@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2024-12-30
 last_modified_at: 2026-04-07
 
-order : 270
+order : 4150
 ---
 
 # 메모리 구조
