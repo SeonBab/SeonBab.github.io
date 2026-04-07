@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-09-17
 last_modified_at: 2025-09-17
 
-order : 3040
+order : 4400
 ---
 
 # 교착 상태

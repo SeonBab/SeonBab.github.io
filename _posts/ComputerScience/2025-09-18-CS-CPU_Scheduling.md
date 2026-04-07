@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-09-18
 last_modified_at: 2025-09-18
 
-order : 3020
+order : 4200
 ---
 
 # CPU 스케줄링

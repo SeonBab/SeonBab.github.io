@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-09-02
 last_modified_at: 2025-09-02
 
-order : 2210
+order : 3700
 ---
 
 # 입출력 기법

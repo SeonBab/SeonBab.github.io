@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-09-19
 last_modified_at: 2025-09-19
 
-order : 3050
+order : 4500
 ---
 
 # 메모리 관리

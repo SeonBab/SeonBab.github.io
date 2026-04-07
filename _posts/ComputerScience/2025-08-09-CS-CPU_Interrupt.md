@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-08-09
 last_modified_at: 2025-08-09
 
-order : 2040
+order : 2800
 ---
 
 # CPU 인터럽트

@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-08-01
 last_modified_at: 2025-08-01
 
-order : 120
+order : 1200
 ---
 
 # 정수의 내부 표현

@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2026-04-07
 last_modified_at: 2026-04-07
 
-order : 30
+order : 400
 ---
 
 # 컴파일 언어와 인터프리터 언어

@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-07-29
 last_modified_at: 2026-04-06
 
-order : 100
+order : 1000
 ---
 
 # 컴퓨터 데이터 단위

@@ -11,7 +11,7 @@ tag: [컴퓨터 과학, ComputerScience]
 date: 2025-09-03
 last_modified_at: 2025-09-03
 
-order : 3000
+order : 4000
 ---
 
 # 운영체제
