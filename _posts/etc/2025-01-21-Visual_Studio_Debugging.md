@@ -8,7 +8,7 @@ categories:
 tag: [etc]
 
 date: 2025-01-21
-last_modified_at: 2025-01-21
+last_modified_at: 2026-04-07
 
 order : 4
 ---
@@ -94,9 +94,9 @@ order : 4
 
 ## 호출 스택
 
-호출 스택(Call Stack)은 프로그램이 실행되는 동안 호출된 함수들의 순서를 추적하는 도구입니다.
+호출 스택(Call Stack)은 프로그램 실행 중 함수 호출 정보를 저장하는 스택 구조이며, 디버거는 이를 시각적으로 보여줍니다.
 
-디버깅 시 특정 시점에서 프로그램이 어떤 함수에서 실행중인지, 해당 함수가 어떤 경로를 통해 호출되었는지 쉽게 파악 할 수 있게 해줍니다.
+디버깅 시 호출 스택을 통해 현재 실행 중인 함수(스택의 최상단)와, 해당 함수가 어떤 호출 경로를 통해 실행되었는지 확인할 수 있습니다.
 
 ![Call_Stack]({{site.url}}/images/etc/2025-01-21-Visual_Studio_Debugging/Visual_Studio_Debugging-Call_Stack.PNG)
 
