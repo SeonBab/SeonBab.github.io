@@ -10,7 +10,7 @@ tag: [알고리즘]
 date: 2025-04-21
 last_modified_at: 2025-10-21
 
-order : 3000
+order : 130
 ---
 
 # 다익스트라

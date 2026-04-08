@@ -10,7 +10,7 @@ tag: [알고리즘]
 date: 2025-03-08
 last_modified_at: 2025-03-10
 
-order : 30
+order : 40
 ---
 
 # 삽입 정렬

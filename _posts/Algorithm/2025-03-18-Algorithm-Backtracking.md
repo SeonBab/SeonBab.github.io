@@ -10,7 +10,7 @@ tag: [알고리즘]
 date: 2025-03-18
 last_modified_at: 2025-03-18
 
-order : 1020
+order : 100
 ---
 
 # 백트래킹

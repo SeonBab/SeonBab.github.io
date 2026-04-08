@@ -10,7 +10,7 @@ tag: [알고리즘]
 date: 2025-03-07
 last_modified_at: 2025-03-07
 
-order : 20
+order : 30
 ---
 
 # 선택 정렬

@@ -10,7 +10,7 @@ tag: [알고리즘]
 date: 2025-03-05
 last_modified_at: 2025-03-05
 
-order : 10
+order : 20
 ---
 
 # 버블 정렬

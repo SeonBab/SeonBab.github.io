@@ -10,7 +10,7 @@ tag: [알고리즘]
 date: 2024-12-26
 last_modified_at: 2024-12-26
 
-order : 1
+order : 10
 ---
 
 # 알고리즘

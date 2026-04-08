@@ -10,7 +10,7 @@ tag: [알고리즘]
 date: 2025-03-10
 last_modified_at: 2025-03-10
 
-order : 30
+order : 50
 ---
 
 # 퀵 정렬
