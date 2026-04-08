@@ -8,7 +8,7 @@ categories:
 tag: [Cpp]
 
 date: 2024-10-29
-last_modified_at: 2024-11-09
+last_modified_at: 2026-04-08
 
 order : 220
 ---
@@ -338,7 +338,7 @@ public:
         std::cout << "복사 생성자 호출" << std::endl;
 
         Name = std::string(Other.Name);
-        Age = new int(*Other.Age);
+        Age = Other.Age;
     }
 
     std::string GetName() { return Name; }
