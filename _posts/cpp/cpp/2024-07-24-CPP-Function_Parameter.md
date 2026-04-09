@@ -8,7 +8,7 @@ categories:
 tag: [Cpp]
 
 date: 2024-07-24
-last_modified_at: 2024-07-24
+last_modified_at: 2026-04-09
 
 mermaid: true
 
@@ -189,6 +189,40 @@ int main()
 ```cpp
 void func(int* arr, int length);
 ```
+
+### 참조와 포인터의 어셈블리 코드의 차이
+
+참조와 포인터는 포현 방식과 언어적 의미는 다르지만, 많은 경우 컴파일러는 둘 다 주소 기반 접근으로 최적화하여 유사한 어셈블리를 생성한다.  
+그러나 참조는 lias, 포인터는 변수라는 근본적인 차이 때문에 항상 동일하게 동작하지는 않는다.
+
+이에 대한 예제 코드와 어셈블리는 다음과 같습니다.
+
+```cpp
+#include <iostream>
+
+void Func_CallbyReference(int& r)
+{
+    ++r;
+}
+
+void Func_CallbyPointer(int* p)
+{
+    ++(*p);
+}
+
+int main()
+{
+    int num = 100;
+
+		Func_CallbyReference(num);
+		std::cout << num << std::endl;
+		
+		Func_CallbyPointer(&num);
+		std::cout << num << std::endl;
+}
+```
+
+![Disassemble]({{site.url}}/images/cpp/cpp/2024-07-24-CPP-Function_Parameter/Function_Parameter-Disassemble.PNG)
 
 ## 디폴트 매개변수
 
