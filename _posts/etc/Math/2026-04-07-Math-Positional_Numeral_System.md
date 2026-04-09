@@ -8,7 +8,7 @@ categories:
 tag: [수학]
 
 date: 2026-04-07
-last_modified_at: 2026-04-07
+last_modified_at: 2026-04-10
 
 order : 5000
 ---
@@ -37,7 +37,7 @@ N진법은 숫자를 표현하는 방법으로, $0$부터 $(N - 1)$까지의 숫
 모든 N진법에서 수는 다음과 같이 표현됩니다.
 
 $
-(a_{k} a_{k-1} \cdots a_{1} a_{0})_{N} = a_{k} \cdot N^{k} + a_{k-1} \cdot N^{k-1} + \cdots + a_{1} \cdot N^{1} + a_{0} \cdot N^{0}
+(a\_{k} a\_{k-1} \cdots a\_{1} a\_{0})\_{N} = a\_{k} \cdot N^{k} + a\_{k-1} \cdot N^{k-1} + \cdots + a\_{1} \cdot N^{1} + a\_{0} \cdot N^{0}
 $
 
 여기서 각 자리의 숫자 $a_{i}$는 $(0 \le a_{i} < N)$을 만족합니다.
