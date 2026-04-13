@@ -8,7 +8,7 @@ categories:
 tag: [Cpp]
 
 date: 2024-07-24
-last_modified_at: 2026-04-09
+last_modified_at: 2026-04-13
 
 mermaid: true
 
@@ -189,6 +189,55 @@ int main()
 ```cpp
 void func(int* arr, int length);
 ```
+
+배열을 함수에 전달하는 다른 예시는 다음과 같습니다.
+
+```cpp
+#include <iostream>
+
+void Function_1(int arr[])
+{
+    std::cout << "arr[0]:" << arr[0] << std::endl;  // 10 출력
+    std::cout << "arr[1]:" << arr[1] << std::endl;  // 20 출력
+    std::cout << "arr[2]:" << arr[2] << std::endl;  // 30 출력
+    std::cout << "arr[3]:" << arr[3] << std::endl;  // 40 출력
+}
+
+void Function_2(int arr[2])
+{
+    std::cout << "arr[0]:" << arr[0] << std::endl;  // 10 출력
+    std::cout << "arr[1]:" << arr[1] << std::endl;  // 20 출력
+    std::cout << "arr[2]:" << arr[2] << std::endl;  // 30 출력
+    std::cout << "arr[3]:" << arr[3] << std::endl;  // 40 출력
+}
+
+int main()
+{
+    int numbers[] = { 10, 20, 30, 40 };  // 크기가 4인 배열
+
+    Function_1(numbers);
+
+    std::cout << std::endl;
+
+    Function_2(numbers);
+
+    return 0;
+}
+```
+
+`Function_1`와 `Function_2`는 다르게 보이지만, 함수 매개변수에서 배열 형식은 포인터 형식으로 조정됩니다.  
+즉, 다음과 같은 형태로 이해할 수 있습니다.
+
+```cpp
+void Function_1(int* arr);
+void Function_2(int* arr);
+```
+
+따라서 두 함수 모두 배열의 시작 주소를 전달받으며, 같은 배열 `numbers`를 사용하므로 같은 값을 출력합니다.  
+다만 `Function_2(int arr[2])`는 길이가 2인 배열만 받을 수 있는 것처럼 보이지만, 실제로는 그렇지 않습니다.  
+함수 매개변수에서 `int arr[2]`는 배열 크기 정보를 유지하지 않기 때문입니다.
+
+이처럼 배열의 길이를 제한하는 의미가 없는 표기는 코드를 읽는 사람에게 혼동을 줄 수 있으므로, 일반적으로는 `int* arr`처럼 명확하게 표현하거나 배열의 길이를 함께 전달하는 방식이 더 좋습니다.
 
 ### 참조와 포인터의 어셈블리 코드의 차이
 
