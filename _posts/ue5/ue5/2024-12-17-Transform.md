@@ -86,15 +86,15 @@ X의 경우 빨강색, Y의 경우 초록색, Z의 경우 파란색으로 표시
 이동(Translation)기즈모는 월드 내 각 축에서 양의 방향을 가리키는 여러 색상의 화살표 세트입니다.  
 이 기즈모를 사용하면 액터를 축이나 평면을 따라서 또는 자유로운 방향으로 움직일 수 있습니다.
 
-![1개 축 이동](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/80754b06-a32d-47de-9de7-a8c62d684e7e/translate-single-axis.gif)
+![1개 축 이동](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/ac394aa9-54e5-4bc5-9e2e-36d07a2ee878/translate-single-axis.gif)
 
 액터가 동시에 두 개의 축을 따라 움직이게 하려면 두 축이 만나는 점의 사각형을 클릭한 다음, 액터를 두 축(XY, XZ, YZ)으로 정의된 평면을 따라 드래그하여 움직입니다.
 
-![2개 축 이동](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/6cb67da6-5761-4d03-adf4-73b051184aa6/translate-two-axes.gif)
+![2개 축 이동](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/76eb33ad-f1c8-46be-9ab6-3f8e13387a07/translate-two-axes.gif)
 
 세 축을 따라 액터를 자유롭게 움직이려면 세 축이 교차하는 지점의 하얀색 구체를 클릭하여 드래그합니다. 액터를 마우스 휠로 가까이 또는 멀리 움직일 수도 있습니다.
 
-![모든 축 이동](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/c0ad1c81-7ce1-48ed-8e32-2930b42ce68d/translate-three-axes.gif)
+![모든 축 이동](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/fe431e43-bb7e-48e3-8ae5-7d7aa72339be/translate-three-axes.gif)
 
 ### 회전 기즈모
 
@@ -105,7 +105,7 @@ X의 경우 빨강색, Y의 경우 초록색, Z의 경우 파란색으로 표시
 예를 들어 XY 평면과 직각인 Z축을 중심으로 회전합니다.
 예를 들어 XY 평면에 정렬된 호는 Z축을 중심으로 액터를 회전시킵니다.
 
-![회전 기즈모](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/0248bff5-772a-40f3-b6a4-7b7c7a5626de/rotate-actor.gif)
+![회전 기즈모](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/9a3c3059-caeb-49db-9fcc-c87addd26de5/rotate-actor.gif)
 
 커서를 특정 호로 가져가면 해당 호가 노란색으로 바뀝니다.  
 그러면 드래그하여 액터를 회전시킬 수 있습니다.  
@@ -118,7 +118,7 @@ X의 경우 빨강색, Y의 경우 초록색, Z의 경우 파란색으로 표시
 이 핸들 가운데 하나를 잡고 기즈모를 드래그하면 연결된 축만을 따라서 선택한 액터의 스케일을 조절합니다.  
 이 핸들에는 이동 및 회전 기즈모와 마찬가지로 축마다 색이 부여됩니다.
 
-![1개 축 스케일](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/071c8a43-c079-4c1a-91bc-7bc6867f6295/scale-single-axis.gif)
+![1개 축 스케일](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/86af4fdd-7bc8-4e0f-b009-0d70eff08e33/scale-single-axis.gif)
 
 스케일 기즈모의 경우 이동 기즈모처럼 한번에 두 축을 동시에 조절하거나 한번에 세 축을 동시에 조절하는 것이 가능하고 방법 또한 같습니다.
 
@@ -129,17 +129,17 @@ X의 경우 빨강색, Y의 경우 초록색, Z의 경우 파란색으로 표시
 월드 스페이스의 경우 이동 기즈모의 XYZ축과 월드의 XYZ축이 같습니다.  
 Z축을 따라 드래그하면 큐브가 바닥을 기준으로 위아래로 움직입니다.
 
-![월드 축 트랜스폼](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/e2acce6f-8ed1-4f15-9051-1778100e0edf/coordinates-world-space.gif)
+![월드 축 트랜스폼](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/3b472ea4-e15f-4a4a-9488-2b17f411a3f4/coordinates-world-space.gif)
 
 로컬 스페이스의 경우 이동 기즈모의 XYZ축이 큐브의 로컬 좌표를 사용합니다.  
 Z축을 따라 드래그하면 마찬가지로 큐브가 위아래로 움직이지만 해당 각도에 맞춰 움직입니다.
 
-![로컬 스페이스 트랜스폼](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/24453b9c-ea8c-428a-b95b-983111782e4a/coordinates-local-space.gif)
+![로컬 스페이스 트랜스폼](https://d1iv7db44yhgxn.cloudfront.net/documentation/images/9ee44855-ca1c-4ac2-a39e-1a762a80d3a1/coordinates-local-space.gif)
 
 월드 스페이스는 객체를 전체 씬 기준으로 정렬할 때 사용합니다.  
 로컬 스페이스는 부모-자식 관계의 컴포넌트들의 회전이나 이동을 로컬 기준으로 수행하고 싶을 때 사용합니다.
 
 # 참고
 
-[액터 트랜스폼하기](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/transforming-actors-in-unreal-engine){: target="_blank"}  
+[액터 트랜스폼하기](https://dev.epicgames.com/documentation/unreal-engine/transforming-actors-in-unreal-engine){: target="_blank"}  
 [액터 트랜스폼](https://dev.epicgames.com/documentation/ko-kr/unreal-engine/transforming-actors?application_version=4.27){: target="_blank"}
