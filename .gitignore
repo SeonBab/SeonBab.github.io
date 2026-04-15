@@ -27,3 +27,10 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+
+# Obsidian
+.obsidian/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+.DS_Store
