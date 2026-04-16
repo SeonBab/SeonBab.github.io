@@ -29,7 +29,11 @@ _asset_bundler_cache
 _site
 
 # Obsidian
-.obsidian/
+# 전체 제외는 하지 않는다.
+# .obsidian/
+# 불필요한 설정 파일은 제외한다.
+!.obsidian/
+!.obsidian/**
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .trash/
