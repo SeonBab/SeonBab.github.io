@@ -39,9 +39,98 @@ order : 260
 - 객체가 생성되면, 해당 객체는 자신의 클래스에 대응되는 가상 함수 테이블을 가리키는 포인터(VPTR)를 포함합니다.
 - 가상 함수가 호출되면, 객체의 VPTR을 통해 가상 함수 테이블에 접근하고, 해당 함수의 주소를 찾아 호출합니다.
 
-이러한 구조를 통해 함수 호출이 실행 시점에 결정되며, 이를 동적 바인딩이라고 합니다.  
-동적 바인딩은 정적 바인딩에 비해 약간의 오버헤드가 존재하여, 가상 함수 테이블을 사용할 경우에도 해당 오버헤드가 적용됩니다.  
-하지만, 현재 컴파일러의 최적화로 인해 일반적인 상황에서는 성능 차이가 크지 않습니다.
+특징은 다음과 같습니다.
+
+- 각 클래스는 자신의 가상 함수 목록에 대응되는 V-Table을 가집니다.
+	+ 그로 인한 오버헤드가 적용되지만, 컴파일러의 최적화로 인해 일반적인 상황에서는 성능 차이가 크지 않습니다.
+- 일반적인 단일 상속 환경에서는 객체가 자신의 클래스에 대응되는 VPTR을 통해 V-Table에 접근합니다.
+- VPTR은 일반적으로 객체의 메모리 시작 부분에 위치합니다.
+- 생성 중에는 현재 생성이 완료된 클래스 단계에 맞는 V-Table이 설정됩니다.
+- 소멸 중에는 아직 유효한 클래스 단계에 맞는 V-Table이 다시 변경됩니다.
+
+다만, VPTR의 위치나 V-Table의 구체적인 구조는 C++ 표준이 보장하지 않으며, 컴파일러 및 ABI에 따라 달라질 수 있습니다.
+
+객체의 VPTR은 생성 시 한 번만 설정되는 것이 아니라, 생성 과정과 소멸 과정에 따라 단계적으로 변경될 수 있습니다.
+
+### 가삼 함수 테이블의 동작 과정
+
+다음 코드는 일반적인 구현에서 VPTR을 관찰하기 위한 예제입니다.
+
+```cpp
+#include <iostream>
+
+class BaseClass
+{
+public:
+    BaseClass()
+    {
+        PrintVPtr("BaseClass Constructor");
+    }
+
+    virtual ~BaseClass()
+    {
+        PrintVPtr("BaseClass Destructor");
+    }
+
+    virtual void Print() const
+    {
+        PrintVPtr("BaseClass::Print");
+    }
+
+protected:
+    void PrintVPtr(const char* label) const
+    {
+        // 일반적인 구현을 관찰하기 위한 실험용 코드
+        void* const* vptr = reinterpret_cast<void* const*>(this);
+
+        std::cout << label
+            << " | this: " << this
+            << " | vtable: " << *vptr
+            << std::endl;
+    }
+};
+
+class DerivedClass : public BaseClass
+{
+public:
+    DerivedClass()
+    {
+        PrintVPtr("DerivedClass Constructor");
+    }
+
+    ~DerivedClass() override
+    {
+        PrintVPtr("DerivedClass Destructor");
+    }
+
+    void Print() const override
+    {
+        BaseClass::Print();
+        PrintVPtr("DerivedClass::Print");
+    }
+};
+
+int main()
+{
+    DerivedClass derived;
+
+    std::cout << std::endl;
+
+    derived.Print();
+
+    std::cout << std::endl;
+
+    return 0;
+}
+```
+
+이 코드에서는 객체의 시작 주소를 통해 VPTR이 가리키는 V-Table 주소를 출력하여, 생성 및 소멸 과정에서의 변화를 확인합니다.
+
+![Virtual-VPTR]({{site.url}}/images/cpp/cpp/2024-12-23-CPP-Virtual/Virtual-VPTR.png)
+
+즉, 생성 과정에서는 기반 클래스에서 파생 클래스로 올라가며 VPTR이 변경되고, 소멸 과정에서는 반대로 파생 클래스에서 기반 클래스로 내려가며 VPTR이 다시 변경됩니다.
+
+이는 생성되지 않았거나 이미 소멸된 파생 클래스 영역에 접근하는 것을 방지하기 위한 동작입니다.
 
 ## 가상 함수를 사용하는 이유
 
